@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Document</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/e28c4bff31.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- style -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      body {
+        background-color: royalblue;
+      }
+
+      .gnb {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        a {
+          display: block;
+          font-size: 40px;
+          color: #fff;
+          margin: 25px 0;
+          height: 80px;
+          position: relative;
+          padding-left: 30px;
+
+          &::before {
+            content: "\f054";
+            font-family: fontawesome;
+            font-size: 22px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+          }
+        }
+        &:hover a {
+          opacity: 0.3;
+          height: 80px;
+        }
+      }
+
+      .gnb a:hover {
+        opacity: 1;
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gnb">
+      <a href="#none">New Arrivlas</a>
+      <a href="#none">Summer Colletion</a>
+      <a href="#none">Winter Collection</a>
+      <a href="#none">Special Offers</a>
+      <a href="#none">Trends</a>
+    </div>
+  </body>
+</html>

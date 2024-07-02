@@ -1,0 +1,8 @@
+2024 07 01 월
+-------------------
+rem 단위
+
+setInterval _ js    특정주기에 맞춰 명령
+
+CSS3:
+position _ relative _ 상대값 / absolute _절대값 / sticky_  / static   /  fixed_고정

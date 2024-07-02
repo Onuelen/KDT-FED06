@@ -1,0 +1,60 @@
+2024 06 28 금
+----
+
+css를 활용해서 background 이미지를 가져온느 속성 및 방식 상이 /
+*속성을 축약해서 사용하는 문법 존재 / 
+- 글자 사이즈: font-size / font-weight
+
+- font 
+
+-background-image
+-background-size
+-background-position
+-background-repeat
+
+JS로 css 스타일 제어하려면 style.backgroundimage
+
+JS > slide 배열 (*데이터) => 
+배열 = [ "대괄호" ]
+
+*bubbling _ 
+event capturing _ ex) 플레이버튼 = 트리거 사용 / 음악 재생
+
+카카오 맵 서비스
+영화 데이터 
+가상화폐 사이트 가격정보
+기상데이터
+
+API : json => Javascript Object Notation 
+
+어떤 결과값을 도출 : 방법 다양
+position : absolute 
+margin 
+display
+grid
+block
+효율성 따져보기 / 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

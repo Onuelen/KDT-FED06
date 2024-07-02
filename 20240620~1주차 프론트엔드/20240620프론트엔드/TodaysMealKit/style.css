@@ -1,0 +1,16 @@
+/* reset css */
+@import url("./reset.css");
+
+/* === Mobile === */
+
+#app_container {
+  width: 100%;
+}
+
+#navigation_heading {
+}
+
+#logo {
+  font-family: "";
+  font-size: 28px;
+}

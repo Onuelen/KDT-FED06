@@ -1,0 +1,80 @@
+PJ 1
+2024. 06.21 ~ 07.12 금   07.12 발표
+
+본인을 소개할 수 있는 profile 웹 페이지 완성
+웹 페이지 구현 전, 피그마 와이어 프레임 작업 HTML / SCSS / JS + @
+@media-quiry를 활용하여 responsive Web page 완성
+
+벤치마킹 사이트
+
+
+디비컷  / 굿디자인웹 / 어워즈
+
+
+
+
+
+
+IA 메뉴구조도 구성 단계
+WBS (*업무분류체계)
+
+1. 내용
+기본 프로파일 + 장단점 , 취미 ,좋아하는 것 , 싫어하는 것 
+			=
+이름 / 나이 / 전공 / 학력 / 사용 스킬 / 취미 / 장단점 / 사진 / 
+경력 사항 / 자격증 / 주소 / 목표 / 
+			=
+
+2.컨셉 
+톤    >>  무채 / 파스텔 / 비비드 
+이미지 > 톤에 맞게 
+무드 > 이미지 톤 고려
+
+
+
+
+
+
+3.디자인
+
+
+
+
+
+4.기능
+이미지 삽입 / 글꼴 변경 / 그라데이션 / z index 
+마우스 오버 효과 _ 색상 변경 / 스크롤 색변화 
+자동 페이지 전환 / 클릭_장면 전환
+
+
+
+5.활용성
+마우스 오버 + 이미지 전환,이동 효과 > 모션감
+스크롤 애니메이션
+
+
+
+
+
+https://www.jbdisplay.co.kr/
+
+
+https://campaign.naver.com/nanumsquare_neo/#features
+
+
+https://www.besign.co.kr/
+
+http://kim-sunghwan.com/#section01
+
+http://dkrmds.com/#slide1
+
+https://jeong1233.github.io/website/portfolio/index.html#1stPage
+
+
+http://www.de-ssion.com/v22/index.html
+
+
+https://www.behance.net/search/projects/portfolio?tracking_source=typeahead_nav_recent_suggestion
+
+
+https://www.dbcut.com/websites?sca=%EB%94%94%EC%9E%90%EC%9D%B8%2F%EA%B4%91%EA%B3%A0&page=9
