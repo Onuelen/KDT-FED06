@@ -14,11 +14,10 @@ const items = document.querySelectorAll("#card_items li");
 
 items.forEach((item) => {
   item.addEventListener("mouseover", () => {
-    item.style.transform = "translateY(-25px)";
-    item.style.transition = "all 0.3s";
+    item.style.transform = "scale(120%)";
   });
   item.addEventListener("mouseout", () => {
-    item.style.transform = "translateY(0)";
+    item.style.transform = "scale(100%)";
   });
 });
 
@@ -78,7 +77,7 @@ fetch("./data.json")
       item.addEventListener("click", (e) => {
         e.preventDefault();
         const { title, description } = jsonData.data[index];
-        bgImg.style.backgroundImage = `radial-gradient(circle, transparent, rgba(0, 0, 0, 0.7)),url(./img/${bgImgs[index]})`;
+        bgImg.style.backgroundImage = `radial-gradient(circle, transparent, rgba(0, 0, 0, 1)),url(./img/${bgImgs[index]})`;
         contentTit.innerText = title;
         contentDesc.innerText = description;
       });
