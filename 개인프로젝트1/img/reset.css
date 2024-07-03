@@ -1,0 +1,38 @@
+@font-face {
+  font-family: ;
+  src: url(./);
+  font-weight: 400;
+}
+@font-face {
+  font-family: ;
+  src: url(./);
+  font-weight: 700;
+}
+
+:root {
+  --bg-color-white: #fff;
+  --bg-color-black: #000;
+  --main-width: 1190px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ;
+  letter-spacing: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}

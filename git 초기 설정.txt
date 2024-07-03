@@ -21,3 +21,8 @@ git config --unset --global user.email "email"
 1) git data 옮겨놓기  :  git add .   / git status
 2) git에 옮겨진 데이터에 이름 붙이기. git commit -m "file name"
 3) git_hub commit : git push origin master   
+
+/////////////
+
+git push origin main
+git push -u origin main

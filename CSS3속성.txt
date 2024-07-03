@@ -1,0 +1,101 @@
+CSS3 grammer
+
+
+CSS3 속성
+
+1) 단위 : px / rem / em / % / vw / vh
+	html 문서 안에 특별한 font-size 지정하지 않은 상황이라면
+ 	기본적인 font-size : 16px  /  폰트 사이즈 기본 설정값 -가장 큰 속성 값 H1태그=32px
+
+ > em: element 약자. 부모요소의 font-size를 기준으로 몇 배수의 크기를 가져가게 할 것 인가?
+    부모의 2배수
+
+> rem : root element 약자. 현재 작업중인 문서 내 최상위 요소 태그
+혹은 그에 준하는 선택자     
+
+실무 :
+우리 작업 제품 (*웹 페이지)
+- default : 18px 
+- * or body => font size : 18px
+- 0.5rem
+- 1.5rem
+
+	***!!가변 그리드 !!***
+> grid layout
+
+vw / vh
+viewport width / height 
+
+100% => 문서 작성된 컨텐츠 높이만큼 높이 결정
+
+2) display 속성 : none / block / inline / inline-block
+none _ 존재 자체를 없앤다.
+block_ 한줄을 차지
+inline_ 한줄을 차지 하지 않는다.
+inline-block _ 하이브리드.
+
+
+3) visibility 속성 : visible / hidden / collapse
+ visibility   :  hidden  = 없어지지만, 기존 공간이 그대로 남아 있다 / 안보이는 것 뿐
+ visibility   :  collapse  = 없어지긴함, 기존 공간이 줄어든다. 최소의 공간만 남기고 안보이게 됨
+
+
+4) opacity 속성 : 1=100% / 불투명 0 = 0%
+
+5) margin / padding 속성 동일
+
+ - 1개 : 상하좌우 값을 동일 
+ - 2개 : 상하 / 좌우
+ - 3개 : 상 / 좌우 / 하
+ - 4개 : 상부터 시계 방향 / 상 우 하 좌
+
+
+6) box-sizing
+ - border-box : border / padding => content item width&height 포함
+ - content-box : content item에 적용한 width, height 값을 그대로 유지한 채로 border / padding 에 적용 (*default 값)
+
+7) bord 속성
+ - border-width
+ - border-style
+ - border - color
+ - border - radius : 테두리를 둥그렇게 생성 
+=> 값 1개 : 상하좌우 모두 값을 동일
+=> 값 4개 : 좌상단 / 우상단 / 우하단/ 좌하단   _  좌상단부터 시계 방향
+원을 만들때 지름의 길이만큼 radius 값을 주면 원이된다. / 50%(반지름) 이상을 줘도 된다.
+
+border 축약
+            border-width: 5px;
+            border-style: solid;
+            border-color: crimson;          =            border: 5px solid crimson;
+
+
+8) font 속성
+ - font -family    ex_ 구글 폰트 @get import 
+ - font - size
+ - font - weight _ 400:nomal   / 700:bold
+ - font - style  _  nomal;default    /   italic ; 기울어짐
+-  line-height  _  1=100 / 폰트의 위 아래 길이. (여백, 비율 안깨짐)
+
+
+
+9) background 속성
+
+10) float 속성
+
+11) shadow 속성
+
+12) gradient 속성
+
+
+
+
+
+
+
+
+
+
+
+
+
+
