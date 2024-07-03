@@ -1,0 +1,189 @@
+Canvas  = Frame
+
+Figma  -  웹 좌표계 사용_ 좌상단 영점  /   x=우측 증가 , y=하단 증가
+Plug-in : 확장프로그램 
+***Auto layout- figma 핵심 기능
+***Component 
+***Layout grid
+
+
+
+플러그인 종류
+-unsplash   이미지
+-feather icons 아이콘
+
+
+
+
+
+wev editor : html, css,js 등의 프로그래밍 혹은 스타일시트 언어를 보다 효율적으로 입력할 수 있도록 도와주는 툴
+brackets / 이클립스 / 파이참 / 인텔리제이 _분야마다 다름
+프론트엔드 F/E= VS CODE > MS & Figma
+
+webeditor _vs code
+Root Folder 
+>작업 : 경로 설정 (*상대 경로 설정 /* 절대 경로 설정 )
+
+1.블로그 작업
+> issue : 문제점 / 해결 / 결과
+
+2. Git-hub
+issue - new issue / f/e 포트폴리오 git-hub 첨부 필수 _ issue 정리 
+
+3.component 작업 
+>패턴 혹은 템플릿 저장
+>개별적인 스타일 (*인스턴스) 설정 제약
+> 붕어빵 틀 => 붕어빵 
+
+12 = 10과 가까운 숫자 중에서 가장 많은 최대 공약수를 가지고 있는 숫자.
+디스플레이 사이즈를 12로 나눴을때 소수없이 떨어지는게 좋다.
+
+Contents : 1190
+left & right padding : 365*2 => 1920
+ 
+layout grid
+
+웹 페이지 기획 / 구성
+= 문법
+1) header
+2) main =>slider
+3) srction
+4) article
+5) footer
+
+woff 확장자 _ 웹개발자의 웹에서 사용하는 글꼴 확장자.
+woff  -> TTF -> OTF  변환
+ttf : 폰트를 개발 베지에 곡선을 가짐. Mac
+otf : win.ver 
+
+1. git hub - 회원가입
+2. figma 복습
+
+
+2024/06/17
+
+*로컬 / 원격 
+> 로컬 = 내 컴퓨터
+> 원격= 내 컴퓨터 바깥에 있는 데이터 공간
+
+
+편집가능 파일 저장- save - local copy
+> 열기 = import - 파일 선택 - open
+
+
+반응형 - 웹앱페이지    =   사이즈에 따라 메뉴나 이미지등의 사이즈도 바뀌어줌
+웹 사이즈 (*가로 사이즈)
+
+
+toggle button = 햄버거 버튼
+
+오토레이아웃 Wrap -> 사이즈 조절 -> 자동 사이즈 조절 
+
+index.html
+style.css
+
+vs code 설정
+ 
+1.언어설정
+>확장 프로그램 - korean
+
+2.material icon Thema
+> 아이콘 테마를 보기 쉽게 바꿔줌
+
+3.one dark pro 
+>어두운 테마 
+
+4.live server  라이브 서버
+>실시간 반응  > alr+ L,O
+>라이브 서버는 자신의 컴퓨터에 가상의 서버를 만드는 것 = 자신의 IP주소가 필요하다.   CMD - ipconfig - IPv6
+연결 브라우저 변경  Live Server › Settings: Custom Browser
+extention setting
+
+5.들여쓰기 설정 - Indent rainbow  
+시작 점 , 끝나는 점 확인이 쉬워짐
+
+6. Auto Rename Tag
+여는 태그 수정시 - 닫는 태그도 자동 수정
+> Hyper Text Markup language
+
+7.Color Picker
+Hex Code 
+
+8.HTML CSS Support
+html의 태그나 클래스명 이름값 등 오류를 체크해줌
+
+9.HTML to CSS autocompletion
+자동완성 타이핑 툴 오타율 줄여줌.
+
+10.Code Runner
+파이썬 사용시 사용함
+
+11.Prettier
+>코드 자동 정리 해줌 - 설치 후 설정 필요 default formatter - pretter 선택 / ditor: Format On Save  = 세이브시 코드 정렬
+
+
+필수 셋팅 / settings
+
+국룰 세팅 들여쓰기 사이즈 설정 Setting - Tab Size = 2
+
+Editor: Word Wrap = 자동 줄바꿈
+
+Editor: Mouse Wheel Zoom = ctrl + zoom 글자 확대
+
+Files: Auto Save Delay  =  500
+
+Live Server › Settings: Full Reload  =  V 스크롤 지점 저장. 
+
+emmet : Emmet: Variables - lang - ko
+
+
+
+
+배포툴 - Firebase / 
+
+Html을 활용해서 코딩을 시작할 때,
+1)가장 디테일한 부분부터 코딩 작업
+2)가장 상위요소부터
+
+a = 앵커 주소 > 하이퍼링크 개념 <a href="주소/"target="_blank">이름</a>
+
+cdn = contents delivery network
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -224,11 +224,21 @@ a {
 
 /* card_items */
 #card_items ul {
-  width: 100%;
+  width: 1200px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
   position: absolute;
-  bottom: 0;
-  transform: translateY(100px);
+  bottom: -50px; 
+  transform: translateX(-50%);
+  border: 1px solid #f00;
+  left: 50%;
+  li {
+    a{
+      img{
+        width: 200px;
+        height: 300px;
+      }
+    }
+  }  
 }

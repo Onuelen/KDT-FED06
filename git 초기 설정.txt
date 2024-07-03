@@ -1,0 +1,23 @@
+GIT _
+1. git bash 설치  /   -git -v
+
+2. 타계정 삭제
+git config 확인 ->   cmd : git config --list
+
+3. 내 계정 정보 등록 
+git config --unset --global user.name "name"
+git config --unset --global user.email "email"
+*등록 -> 체크 : config --list     > 권한설정 ->window 자격증명관리
+
+4. Push
+로컬 컴퓨터 - 루트폴더 git 초기화 / git init
+폴더 -> 우클릭 vs code열기 -> 터미널 -> ctrl + n  _ git init 
+
+5.원격 git hub Repository 연결 /  git remote add origin " 레포짓 주소"
+확인 명령어 : git remote -v
+
+6. 원격 git hub commit
+
+1) git data 옮겨놓기  :  git add .   / git status
+2) git에 옮겨진 데이터에 이름 붙이기. git commit -m "file name"
+3) git_hub commit : git push origin master   

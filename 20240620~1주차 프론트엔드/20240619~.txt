@@ -1,0 +1,155 @@
+1.반응형
+> width *너비 : 매체 혹은 기기 , 가로 사이즈에 따라
+>가장 작은 사이즈 매체를 기준, UI 페이지 제작 =>
+사이즈를 변형
+>가장 큰 사이즈 매체를 기준으로 먼저 UI제작 =>
+사이즈를 변형
+>desktop / tablet / Mobile
+>제품, 서비스 제작 기획회의
+>사용자 taget / segment / persona
+
+2.메인 서비스를 하고자 하는 매체의 페이지를 완성 => 사이즈 변형
+
+3.좋은 코드 vs 나쁜 코드
+>일회성의 코드 : 나쁜 코드
+>재사용성이 가능한 코드 : 좋은 코드
+
+크롬 확장 프로그램 _ 모바일 시뮬레이터
+
+js script
+
+DOM Tree
+Document Object Model
+문서 객체 모델 
+
+BOM
+Browser Object Model
+브라우저 객체 모델 
+
+1.VScode :웹 에디터
+html , css 언어들 
+
+2.웹 브라우저
+
+************ Defer *******************
+
+html css
+작성한 코드의 순서대로 읽는다 -> 읽다가 스크립트 부분에서 넘어간다.
+-동기적 처리방식 - 1다음2다음3 
+-비동기적 처리방식으로 바꿔야 - 동시에 읽는다.   script defer
+
+빈태그 / 홑태그 = 싱글태그
+여는태그,닫는태그 
+
+확장프로그램
+Turbo JS
+
+
+20240620
+
+
+아이콘 span 안에 i태그 class "  주소   "
+
+폼태그 = 입력창    / //        form 태그 만들고 그 안에 input 태그(입력양식 태그)
+            <form action="http://localhost:3000" method="get">         입력값을 해당 주소로 보낸다.  /   method = 방법 / get = 정보값을 가져올때 ex)검색  / post = 데이터를 일방 전송 ex)댓글
+              <input type="text" name="search" id="search">
+              <input type="submit" value="검색">					value 버튼이름
+            </form>
+///////////////////
+            <form action="http://localhost:3000" method="get">
+              <input type="text" name="search" id="search" placeholder="검색하고 싶은 클래스를 입력하세요"/> ////            placeholderㄴ
+
+1.기초방법 :
+-프로그래밍 언어 : 배열 !!
+값을 순서를 매겨서 저장해 놓은 데이터 공간
+- iterable  : 본인의 데이터 공간에 들어온 자식요소들을 하나씩 가져와서 반복적으로 무언가를 실행시켜줄 수 있는 자료형태.
+-반복문 => 반복실행
+-Map / Set : ex) 로또 숫자 6개를 뽑는데, 이미 뽑힌 숫자가 다시 나오면 안된다.
+
+2.고급방법:
+무한으로 슬라이드를 동작시키는 방법
+
+
+
+이미지 가져오기 / css
+background - image   = JS
+background=size       =css
+background-position
+
+=>축약
+background    /    
+
+컴퓨터 운영체제
+JS
+
+stack : 설거지 / 엘레베이터
+
+인덱스 값 : 0 / 1 / 2
+파일이름 : 1 / 2 / 3
+
+(인덱스 값+1) / 전체 총 이미지 개수 (3)
+
+단락회로 평가
+-기준값을 정의 => true / false
+
+
+
+시간관련 자바스크립트 단골 3형제 함수
+setInterval() => 특정 ㅜ지골 무언가를 실행!
+setClear() => 특정 주기로 무언가를 실행하고 있는 함수를 멈춰줘
+setTimeout = > 특정시간이 경과한 후에 무언가를 실행
+
+
+
+`url(./ XXXX /${pics[i]}
+
+24/06/21
+
+overflow  /   넘치는거 조절
+
+
+
+		========		배포			==================		
+*배포 deploy : 작업물 출력작업
+
+*호스팅 hosting : 서버에 데이터를 업로드 하는 작업
+
+ex)
+> filezilla = ftp + dot.home = 가상의 임시서버							
+> cafe24 & Google Firebase
+> netlify
+> git-hub
+> Amazon AWS
+
+=====***	배포 순서		***====
+
+1. debuging 디버깅 체크
+
+
+*open graph : SNS 플랫폼 발달 & 스마트폰 대중화
+=> 공유하기 기능
+ex) facebook : 어떤 내용의 컨텐츠, 디자인 미리보기 형식 공유
+
+
+Head >
+>meta properety > 썸네일에 들어가는 타이틀 , 글자내용 , 썸네일(https 주소로)  / 설정 가능
+
+
+CLI = Command Line Interface
+*** NPM = Node Package Manager
+V8검색엔진
+
+400 Sever 
+500 Not Found
+
+
+
+
+
+
+
+
+
+
+
+ 

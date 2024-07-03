@@ -14,7 +14,7 @@ const items = document.querySelectorAll("#card_items li");
 
 items.forEach((item) => {
   item.addEventListener("mouseover", () => {
-    item.style.transform = "translateY(-20px)";
+    item.style.transform = "translateY(-25px)";
     item.style.transition = "all 0.3s";
   });
   item.addEventListener("mouseout", () => {
@@ -56,10 +56,10 @@ gnbLi.forEach((li) => {
 
 // background image change
 
-const bgImgs = ["bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg"];
+const bgImgs = ["bg_0.jpg", "bg_1.png", "bg_2.jpg", "bg_3.jpg", "bg_4.jpg"];
 
 const bgImg = document.querySelector("#background_img");
-bgImg.style.backgroundImage = `radial-gradient(circle, transparent, rgba(0, 0, 0, 0.7)),url(./img/${bgImgs[0]})`;
+bgImg.style.backgroundImage = `radial-gradient(circle, transparent, rgba(0, 0, 0, 1)),url(./img/${bgImgs[0]})`;
 
 const topContents = document.querySelector("#top_contents");
 const contentTit = topContents.querySelector(".top_contents_title");
