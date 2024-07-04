@@ -28,6 +28,7 @@ viewport width / height
 
 100% => 문서 작성된 컨텐츠 높이만큼 높이 결정
 
+
 2) display 속성 : none / block / inline / inline-block
 none _ 존재 자체를 없앤다.
 block_ 한줄을 차지
@@ -36,7 +37,9 @@ inline-block _ 하이브리드.
 
 
 3) visibility 속성 : visible / hidden / collapse
+
  visibility   :  hidden  = 없어지지만, 기존 공간이 그대로 남아 있다 / 안보이는 것 뿐
+
  visibility   :  collapse  = 없어지긴함, 기존 공간이 줄어든다. 최소의 공간만 남기고 안보이게 됨
 
 
@@ -74,17 +77,72 @@ border 축약
  - font - size
  - font - weight _ 400:nomal   / 700:bold
  - font - style  _  nomal;default    /   italic ; 기울어짐
--  line-height  _  1=100 / 폰트의 위 아래 길이. (여백, 비율 안깨짐)
+ ***행간은 margin - top (or) bottom 으로 조절.
 
+-  line-height  _  1=100 / 폰트의 위 아래 길이. (여백, 비율 안깨짐)
+ > 현재 작성된 텍스트의 높이를 제어 목적 / 수직 정렬 = 세로 정렬 XX (*단문=수직 정렬로 보인다.)
+ > 행간 !! => 행과 행사이 간격
+ > line-height _ 행간이 아님.  /  위 + 아래 간격을 먹는다. 첫줄의 위아래+ 둘째줄의 위아래가 먹기때문에 행간으로 취급불가능
 
 
 9) background 속성
+ - background-image   = size 에 대한 정의가 있어야만 나온다.
+  > 여러장 사용가능 / 레이어 계층 구조 만들기// png
 
-10) float 속성
+ - background-color = size 에 대한 정의가 있어야만 나온다. / 배경 컬러 이미지를 지정하고자 할때
 
-11) shadow 속성
+ - background-size 
+ > cover :	현재 삽입하고자 하는 이미지의 너비를 중심으로 삽입
+ > contain : 현재 삽입하고자 하는 이미지의 높이를 중심으로 삽입
+ > % : 현재 삽입한 이미지를 출력하고 있는 매체의 너비를 기준으로 %비율을 적용하고자 할 때
 
-12) gradient 속성
+ - background-position
+ > 이미지에 대한 위치 정의. ex)bottom ,top / 
+ > 적용한 background 이미지의 위치를 어디에 둘지 결정하고자 할때
+
+ - background-attachment
+ > fixed = positon 고정 _ 메뉴바 느낌 / 스크롤이 이동되더라도 특정 위치에 고정 시키고 싶을때
+ - background-repeat  _ 삽입된 이미지는 기본적으로 repeat 속성을 가지고 있지만, 만약 이 속성을 사용하고 싶지 않은    경우!
+ > no-repeat
+
+
+10) position 속성
+ - static (*순차적인) _ tag를 사용하면 default 값이 static
+
+ - relative (*상대적인) : 순차적으로 입,출력된 아이템 요소들 사이에서 상대적인 위치 좌표값을 가지고 싶을 때_ 기준=먼저 작성된 것 에 따라
+
+ - absolute (*절대적인) : 기존에 작성된 태그들과 다른 차원으로 넘어가기 때문에 위치 좌표값을 절대적으로 사용!!
+(*부모 요소들 중에 누군가가 relative 속성을 가진다면, 해당 부모를 기준으로 절대위치 좌표값을 적용
+
+ - fixed (*고정된) : 설정한 포지션 위치값에 고정으로 붙어있는경우
+
+ - sticky (*달라붙는) : 스티커 => 특정 좌표값에서 스티커처럼 붙어있도록 하고자 할때
+
+- z-index : 3차원 공간에 대한 위치 정의!!!
+x,y 축 / x,y,z 축
+ > 크면 클 수록 모니터를 기준으로 앞으로 튀어나오는 좌표
+ > 작을 수록 모니터 뒤로 들어가는 위치 좌표
+overflow: scroll _ 가로 스크롤이 왜?
+
+11) float 속성 : 예전에 많이 씀
+ - float : 부유하다
+ - 웹 뉴스 기사 컨텐츠 출력 ->ex_ 좌)이미지, 우)본문
+ > 레이아웃 정렬 이슈 => float / 목적
+ > 레이아웃 정렬 전문 문법 => flex & grid 출시. 
+
+
+12) shadow 속성
+ - text - shadow : 텍스트(글자)에 그림자를 부여하는 속성
+ - box - shadow : 아이템 박스에 그림자를 부여하는 속성.
+ (*X축으로 / Y축으로 / 그림자 선명,흐림 / 색상)
+
+
+13) gradient 속성
+ - linear-gradient() :선형
+ - radial-gradient() :원형 
+
+
+https://webgradients.com/
 
 
 

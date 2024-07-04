@@ -1,0 +1,20 @@
+/* reset CSS */
+@import url(./reset.css);
+
+/* PAGE 1 */
+#page1 {
+  width: 1920px;
+  height: 1080px;
+
+  #left_decotext {
+    border: 1px solid #f00;
+    position: relative;
+    rotate: 0deg;
+    margin-left: 0px;
+
+    span {
+      font-size: 180px;
+      font-weight: 700;
+    }
+  }
+}
