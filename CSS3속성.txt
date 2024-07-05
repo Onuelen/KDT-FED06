@@ -146,6 +146,21 @@ https://webgradients.com/
 
 
 
+text-transform: uppercase; = 폰트 대문자 텍스트
+
+
+
+
+object-fit: cover  _ 부모의 요소에 맞추어 영상을 집어 넣는다.
+
+
+letter-spacing   _ 자간
+
+
+
+
+
+
 
 
 

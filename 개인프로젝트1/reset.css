@@ -9,8 +9,11 @@
   font-weight: 900;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-
+@font-face {
+  font-family: "briston";
+  src: url("./fonts/Briston.ttf") format("ttf");
+  font-weight: 400;
+}
 
 :root {
   --bg-color-white: #fff;
@@ -25,7 +28,7 @@
 }
 
 body {
-  font-family: "NotoSansKR";
+  font-family: "briston";
   letter-spacing: auto;
 }
 
