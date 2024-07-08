@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("./fonts//NotoSansKR-Medium.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NotoSansKRBold";
+  src: url("./fonts/NotoSansKR-Black.otf") format("otf");
+  font-weight: 900;
+}
+
+:root {
+  --bg-color-white: #fff;
+  --bg-color-black: #000;
+  --main-width: 1190px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "NotoSansKRBold";
+  letter-spacing: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}

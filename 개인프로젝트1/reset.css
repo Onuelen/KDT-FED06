@@ -4,15 +4,9 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "NotoSansKR";
+  font-family: "NotoSansKRBold";
   src: url("./fonts/NotoSansKR-Black.otf") format("otf");
   font-weight: 900;
-}
-
-@font-face {
-  font-family: "briston";
-  src: url("./fonts/Briston.ttf") format("ttf");
-  font-weight: 400;
 }
 
 :root {
@@ -28,7 +22,7 @@
 }
 
 body {
-  font-family: "briston";
+  font-family: "NotoSansKRBold";
   letter-spacing: auto;
 }
 

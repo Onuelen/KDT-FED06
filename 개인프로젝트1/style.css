@@ -2,25 +2,58 @@
 @import url(./reset.css);
 
 /* PAGE 1 */
-#left_decotext {
+#list {
+  width: 200px;
+  height: 200px;
   position: relative;
-  border: 1px solid #0f0;
-  rotate: 270deg;
-  margin-left: -220px;
-  margin-top: -30px;
-  width: 577px;
-  height: 141px;
+  left: 13%;
+  border: 1px solid #f00;
+  span {
+    display: flex;
+    margin-top: 25px;
+    justify-content: right;
+    border: 1px solid #00f;
+    font: bold 32px/1 "NotoSansKRBold";
+  }
+}
 
-  p {
-    display: inline-block;
-    gap: 0px;
-    font-size: 180px;
-    font-weight: 800;
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 560px;
-    height: 130px;
-    line-height: 105px;
+#header {
+  text-align: left;
+  width: 100%;
+  position: relative;
+  border: 1px solid #00f;
+  h2 {
+    width: 1010px;
+    margin-top: -50px;
+    transform: translate(-50%);
+    margin-left: 50%;
+    text-align: left;
+    border: 1px solid #0f0;
+    position: absolute;
+    font: bold 64px/1 "NotoSansKRBold";
+  }
+  h1 {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 1010px;
     border: 1px solid #f00;
+    font: bold 180px/1 "NotoSansKRBold";
+    justify-content: left;
+  }
+  .trigger {
+    width: 60px;
+    height: 38px;
+    border: 1px solid #f00;
+    display: block;
+    position: relative;
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      position: absolute;
+    }
   }
 }
