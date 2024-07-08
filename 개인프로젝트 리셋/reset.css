@@ -9,12 +9,6 @@
   font-weight: 900;
 }
 
-:root {
-  --bg-color-white: #fff;
-  --bg-color-black: #000;
-  --main-width: 1190px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -26,13 +20,12 @@ body {
   letter-spacing: auto;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+ul,
+li{
+  list-style: none;
 }
 
-ul,
-li,
-ol {
-  list-style: none;
+a {
+    text-decoration: none;
+    color: inherit;
 }

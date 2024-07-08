@@ -95,7 +95,7 @@ figure {
       color: #fff;
       font: normal 120px/1 "arial";
       text-transform: uppercase;
-      margin-bottom: 20px;
+
     }
     p {
       color: #888;
@@ -136,8 +136,8 @@ section {
       margin-bottom: 50px;
     }
     .wrap {
-      width: 100%;
       display: flex;
+      width: 100%;
       gap: 20px;
       justify-content: center;
 
@@ -180,7 +180,6 @@ footer {
     width: 1180px;
     margin: 0 auto;
     .upper {
-      width: 100%;
       display: flex;
       justify-content: space-between;
       padding-bottom: 20px;
@@ -208,7 +207,7 @@ footer {
       }
       p {
         color: #777;
-        font: nomal 12px/1 "arial";
+        font: normal 12px/1 "arial";
       }
     }
   }
@@ -220,7 +219,7 @@ footer {
       width: 100%;
     }
   }
-  figure {
+  section {
     .inner {
       width: 100%;
     }
