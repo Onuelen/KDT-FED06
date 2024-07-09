@@ -1,0 +1,14 @@
+	===***==	240709 화 	===**===
+
+부모요소에 transform-style: preserve-3d 를 주어야 자식요소에 Z값이 먹는다.
+
+    -webkit-perspective: 1500;
+    perspective: 1500;      원근감 설정.
+
+	====
+영상 배경  예시)
+  <body>
+    <main class="wrap">
+      <video src="./img/bg.mp4" muted autoplay loop></video>
+    </main>
+  </body>

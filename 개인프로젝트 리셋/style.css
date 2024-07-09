@@ -2,3 +2,73 @@
 @import url(./reset.css);
 
 /* PAGE 1 */
+body {
+  height: 600vh;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  #wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    & > video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+  #title {
+    border: 10px solid #f00;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    #title_name {
+      position: absolute;
+      border: 3px solid #f00;
+      width: 1010px;
+      margin-left: 50%;
+      margin-top: 5%;
+      transform: translateX(-50%);
+
+      .nav_left {
+        position: absolute;
+        border: 2px solid #f00;
+        width: 200px;
+        left: -20%;
+        top: 18%;
+        & > span {
+          text-align: right;
+          font: bold 32px/1 "NotoSansKRBold";
+          display: block;
+          flex-direction: column;
+          margin-top: 20px;
+        }
+      }
+
+      h3 {
+        width: max-content;
+        margin-left: 10px;
+        font: bold 64px/1 "NotoSansKRBold";
+      }
+      h1 {
+        font: bold 180px/1 "NotoSansKRBold";
+        text-align: left;
+      }
+      .myname {
+        position: absolute;
+        right: -30%;
+        border: 1px solid #00f;
+        width: 235px;
+        & > span {
+          text-align: right;
+          display: block;
+          font: bold 64px/1 "NotoSansKRBold";
+        }
+      }
+    }
+  }
+}

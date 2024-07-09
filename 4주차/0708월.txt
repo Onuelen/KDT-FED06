@@ -1,0 +1,129 @@
+Figma
+ > autolayout
+ > layout grid
+ > wireframe
+ > component / instance
+ > prototype
+
+
+
+html5
+ > 태그
+ > 공간분할태그
+ > semantic
+
+css3
+ > 선택자 13개
+ > 속성 13개
+
+Layout
+ > desktop Lofi wireframe
+ > desktop Hifi wireframe
+
+css3_v2
+ **>** transition (*전환 / 변형)
+ - css에서 반응선택자를 사용할 때 주로
+ - 반응 전 /후 => 상태변화 (*즉각 / 시차 )
+ - 반응이 발생되기 전단계에서 속성값을 적용
+
+		==== 	***	transition		***	=====
+어떤 이미지 혹은 아이템 요소가 변환하는데 있어서 변형에 대한 속성값을 제어한다.
+
+
+1.transition-duration : 변형이 작동될 수 있는 기간 설정
+2. transition-delay : 반응선택자를 통해서 이벤트 실행 후 얼마 후에 변형 스타일을 적용할 것인지 설정
+3. transition-property : 변형 스타일을 적용할 요소를 무엇으로 설정
+4. transition-timing-function : 가속 혹은 감속에 대한 영향을 줄 수 있는 함수 설정
+> linear : 가속, 감속 X 
+> ease : 도입부분은 조금 덜 완만하게 완료부분에서는 조금 더 완만 / 중간영역에서 급격하게. 
+> ease-in : 도입부분(in)에서는 완만하게 시작 / 완료부분(*out) 급격하게 종료
+> ease-out : 도입부분 급격한 시각 / 완료부분에서 완만하게 종료
+> ease-in-out : 도입부분과 완료부분에서는 완만 / 중간영역에서 급격하게. 
+ cubic-bezier.com
+
+font: style size/line-height family
+background : 그라디언트, 이미지, 포지션/사이즈, 리피트
+transition : 프로퍼티_듀레이션(duration 길이)_타이밍펑션_딜레이(delay 이벤트+실행 사이의 시간)
+
+
+ **>** animation
+ 1) animation-duration : 얼마의 기간동안 애니메이션 실행
+2.) animation-delay : 이벤트 발생후 얼마뒤에 애니메이션 실행할 것 인가
+3.)animation-timinfg-function : 애니메이션 실행 시 , 감속 어떻게 할 것 인가.
+4.) anomation-direction : 애니메이션 실행 방향 설정 (*기본 좌->우)
+5.) aniamtion-name) 해당애니메이션만의 고유한 이름설정
+6.) animation -iteration - count :애니메이션을 얼만큼 반복하게 할 것 인가?
+7.) animation-play-state: paused : 애니메이션의 모션 스탑 _ 
+
+
+
+
+ > transform (*변환) => transformer (* 자동차 => 로봇 )
+  - ***	transform : 어떤 이미지 혹은 아이템 요소의 형태 혹은 위치 *(좌표) 등 자체를 변환시키디 위한 속성 / 좌표값 / 각도회전*웹좌표계 /
+	중심축으로부터 회전. (특정 X,Y,Z 의 축) / 크기 변형
+
+rotate(angle deg) : 회전각도
+scale(x,y ) : 크기 
+scale X( ) : 크기 
+scale Y( ) : 크기 
+scew X( ): 특정 중심 축을 기준으로 기울기.
+scew Y( ): 특정 중심 축을 기준으로 기울기.
+translate(x,y): 특정 크기만큼 이동
+translateX( ): 특정 크기만큼 이동
+translateY( ): 특정 크기만큼 이동
+
+ > transform-origin: 도형의 중심축을 바꿈.
+
+=> 1개의 이미지 혹은 도형 요소에 복수의 transform 효과 적용!!!
+> 적용하는 순서에 따라서 결과값이 완전히 달라질 수 있음
+
+
+
+		 > ===		***	3D 공간 개념	***		======<
+loading spinner
+				*** transform-style: preserve-3d;
+
+*원근감 
+-       -webkit-perspective: 200;
+        perspective: 2000;
+*자식요소에서늬 Z축으로부터의 공간감을 적용시켜주기 위해서 부모요소에서 적용!!
+transform-style: preserve-3d;
+
+
+3차원 = 3D
+=> Z축에 대한 공간감
+scale(x,y,z ) : 크기 
+scale X( ) : 크기 
+scale Y( ) : 크기 
+scale Z( ) : 크기 
+scew X( ): 특정 중심 축을 기준으로 기울기.
+scew Y( ): 특정 중심 축을 기준으로 기울기.
+scew Z( ): 특정 중심 축을 기준으로 기울기.
+translate(x,y,z): 특정 크기만큼 이동
+translateX( ): 특정 크기만큼 이동
+translateY( ): 특정 크기만큼 이동
+translateZ( ): 특정 크기만큼 이동
+
+
+
+
+
+
+
+css_v3
+ > Flexable / responsive (*반응형)
+ > flex / grid
+ > meadia-query => device / break-point
+
+css
+> mix-in / include
+
+
+
+
+
+
+
+
+
+

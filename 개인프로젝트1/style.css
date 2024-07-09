@@ -3,7 +3,7 @@
 
 /* PAGE 1 */
 #list {
-top: 170px;
+  top: 170px;
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -18,33 +18,49 @@ top: 170px;
     font: bold 32px/1 "NotoSansKRBold";
   }
 }
-
+body {
+  height: 400vh;
+}
 #header {
   height: 100vh;
   width: 100%;
-  position: relative;
+  position: absolute;
   border: 1px solid #00f;
-  h2 {
-    width: 1010px;
-    margin-top: 100px;
-    transform: translate(-50%);
-    margin-left: 50%;
-    text-align: left;
-    border: 1px solid #0f0;
+  .wrap {
     position: absolute;
-    font: bold 64px/1 "NotoSansKRBold";
-  }
-  h1 {
-    position: absolute;
-    margin-top: 130px;
-    margin-left: 50%;
-    transform: translate(-50%);
-    width: 1010px;
-    border: 1px solid #f00;
-    font: bold 180px/1 "NotoSansKRBold";
-    justify-content: left;
-  }
-  .trigger {
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1300;
+    perspective: 1300;
+    background-color: #000;
+    & > video {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+    }
+    h2 {
+      width: 1010px;
+      margin-top: 100px;
+      transform: translate(-50%);
+      margin-left: 50%;
+      text-align: left;
+      border: 1px solid #0f0;
+      position: absolute;
+      font: bold 64px/1 "NotoSansKRBold";
+    }
+    h1 {
+      position: absolute;
+      margin-top: 130px;
+      margin-left: 50%;
+      transform: translate(-50%);
+      width: 1010px;
+      border: 1px solid #f00;
+      font: bold 180px/1 "NotoSansKRBold";
+      justify-content: left;
+    }
+    /* .trigger {
     right: 213px;
     width: 60px;
     height: 38px;
@@ -58,12 +74,13 @@ top: 170px;
       background-color: #000;
       position: absolute;
     }
+  } */
   }
 }
 
 #name {
   position: absolute;
-  width:fit-content;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   border: 1px solid #f00;
@@ -73,5 +90,12 @@ top: 170px;
   span {
     font: bold 64px/1 "NotoSansKRBold";
     border: 2px solid #ff0;
+  }
+}
+/* 2page */
+main {
+  & > div {
+    & > h1 {
+    }
   }
 }
