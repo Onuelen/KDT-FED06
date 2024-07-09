@@ -39,14 +39,20 @@ body {
       border: 1px solid #6cd484;
       border-radius: 3px;
       padding: 5px;
-      .progress-level {
+      /* .progress-level {
+        height: 10px;
+        background: linear-gradient(to right, #00d1ff, #712eff);
+        animation: ani 1.2s;
+        animation-fill-mode: both;
+      } */
+    }
+  }
+  &:hover .progress-level {
         height: 10px;
         background: linear-gradient(to right, #00d1ff, #712eff);
         animation: ani 1.2s;
         animation-fill-mode: both;
       }
-    }
-  }
 }
 
 .skill-progress > .item:nth-of-type(1) .progress-level {
