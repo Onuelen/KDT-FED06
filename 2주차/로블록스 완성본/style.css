@@ -21,9 +21,9 @@ a {
   position: relative;
   padding: 30px;
   width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.8)),
-    url("./img/bg.jpg") center/cover no-repeat;
+  height: 120vh;
+  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.9)),
+    url("./img/bg_coupangplay.jpg") center/cover no-repeat;
 }
 
 /* login */
@@ -52,8 +52,8 @@ a {
 #logo {
   width: 300px;
   height: 54px;
-  background: url("./img/bi_1.png") center/cover no-repeat;
-  margin: 70px auto 34px;
+  background: url("./img/bl_coup.png") center/cover no-repeat;
+  margin: 0 auto 30px;
   /* position: absolute;
   top: 70px;
   left: 50%;
@@ -63,9 +63,9 @@ a {
 /* logon */
 #logon {
   width: 463px;
-  height: 650px;
-  background: radial-gradient(rgba(35, 37, 39, 0.7), rgba(35, 37, 39, 0.9)),
-    url("./img/middle.png") center/cover no-repeat;
+  height: 750px;
+  background: radial-gradient(rgba(35, 37, 39, 0.7), rgba(35, 37, 39, 1)),
+    url("./img/middlecoup.jpg") center/cover no-repeat;
   margin: 0 auto 50px;
   padding: 20px;
   border-radius: 10px;
