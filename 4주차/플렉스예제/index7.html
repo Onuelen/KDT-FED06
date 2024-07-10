@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex_test1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+      }
+      header {
+        background: crimson;
+        width: 100%;
+        height: 100px;
+      }
+      #main {
+        nav {
+          flex-grow: 1;
+          background: #fefefe;
+        }
+        article {
+          background: #dfdfdf;
+          flex-grow: 4;
+        }
+        aside {
+          background: #df3333;
+          flex-grow: 1;
+        }
+      }
+      footer {
+        height: 100px;
+        background: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>header</header>
+    <div class="main">
+      <nav>Nav</nav>
+      <article>Article</article>
+      <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>

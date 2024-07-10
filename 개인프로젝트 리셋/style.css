@@ -29,7 +29,7 @@ header {
     #title_name {
       position: absolute;
       border: 3px solid #f00;
-      width: 1010px;
+      width: fit-content;
       margin-left: 50%;
       margin-top: 5%;
       transform: translateX(-50%);
@@ -37,15 +37,15 @@ header {
       .nav_left {
         position: absolute;
         border: 2px solid #f00;
-        width: 200px;
+        width: fit-content;
         left: -20%;
         top: 18%;
         & > span {
           text-align: right;
-          font: bold 32px/1 "NotoSansKRBold";
+          font: bold 1.667vw/1 "NotoSansKRBold";
           display: block;
           flex-direction: column;
-          margin-top: 20px;
+          margin-top: 1.042vw;
         }
       }
 
@@ -55,7 +55,7 @@ header {
         font: bold 64px/1 "NotoSansKRBold";
       }
       h1 {
-        font: bold 180px/1 "NotoSansKRBold";
+        font: bold 9.375vw/1 "NotoSansKRBold";
         text-align: left;
       }
       .myname {
@@ -73,4 +73,61 @@ header {
   }
 }
 /*2page*/
-main
+#page_second {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  border: 5px solid #f00;
+  #page_second_title {
+    border: 2px solid #f00;
+    position: absolute;
+    width: max-content;
+    font: bold 44px/1 "NotoSansKRBold";
+    left: 30%;
+    top: 200px;
+    transform: translate(-50%, -50%);
+  }
+  .content_box {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 290px;
+    align-items: center;
+    border: 1px solid #0f0;
+    display: flex;
+    margin-top: 335px;
+    gap: 20px;
+    #content_boxL {
+      width: 370px;
+      height: 374px;
+      background: pink;
+      .qna {
+        border: 3px solid #0f0;
+        margin: 15px;
+        h4 {
+          margin-bottom: 4px;
+        }
+      }
+    }
+    #content_boxR {
+      width: 370px;
+      height: 374px;
+      background: dodgerblue;
+      .qna {
+        border: 3px solid #0f0;
+        margin: 15px;
+
+        h4 {
+          margin-bottom: 2px;
+        }
+        span {
+          em {
+            font: italic 12px/1 "NotoSansKR";
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1190px) and (min-width: 360px) {
+}
