@@ -68,7 +68,7 @@ body {
       }
     }
     &:hover .content {
-      top: 0;
+      top: 0px;
     }
     &:hover {
       transform: translateY(-20px);
