@@ -1,11 +1,11 @@
 @font-face {
   font-family: "NotoSansKR";
-  src: url("./fonts//NotoSansKR-Medium.otf") format("otf");
+  src: url("./fonts//NotoSansKR-Medium.otf") format("opentype");
   font-weight: 400;
 }
 @font-face {
   font-family: "NotoSansKRBold";
-  src: url("./fonts/NotoSansKR-Black.otf") format("otf");
+  src: url("./fonts/NotoSansKR-Black.otf") format("opentype");
   font-weight: 900;
 }
 
