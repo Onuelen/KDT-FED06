@@ -3,19 +3,18 @@
 
 /* PAGE 1 */
 body {
-  height: 400vh;
-  
+  height: fit-content;
 }
 header {
   width: 100%;
-  height: 100vh;
+  height: max-content;
   position: relative;
   #wrap {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    
+
     /* & > video {
       object-fit: cover;
       width: 100%;
@@ -44,7 +43,7 @@ header {
       margin-top: 5%;
       transform: translateX(-50%);
       cursor: pointer;
-      &:hover{
+      &:hover {
         animation: light 2s ease-in;
       }
 
@@ -59,20 +58,18 @@ header {
           display: block;
           flex-direction: column;
           margin-top: 1.042vw;
-          }
+        }
       }
 
       h3 {
         width: max-content;
         margin-left: 0.521vw;
         font: bold 3.333vw/1 "NotoSansKRBold";
-        
       }
-      
+
       h1 {
         font: bold 9.375vw/1 "NotoSansKRBold";
         text-align: left;
-        
       }
       .myname {
         position: absolute;
@@ -88,9 +85,33 @@ header {
   }
 }
 @keyframes light {
-  0%, 31%, 34%, 39%, 42%, 47%, 50%, 55%, 60%, 67% {opacity: 0;}
-  5%, 30%, 35%, 38%, 43%, 46%, 51%, 54%, 68%, 100% {opacity: 0.7;}
-  75% {opacity: 0.1;}
+  0%,
+  31%,
+  34%,
+  39%,
+  42%,
+  47%,
+  50%,
+  55%,
+  60%,
+  67% {
+    opacity: 0;
+  }
+  5%,
+  30%,
+  35%,
+  38%,
+  43%,
+  46%,
+  51%,
+  54%,
+  68%,
+  100% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.1;
+  }
 }
 /*2page*/
 #page_second {
@@ -99,7 +120,8 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: url("https://skwid17.cafe24.com/Pj1-profile/bg2page.png") center/cover no-repeat;
+  background: url("https://skwid17.cafe24.com/Pj1-profile/bg2page.png")
+    center/cover no-repeat;
   #page_second_title {
     display: flex;
     width: max-content;
@@ -113,7 +135,7 @@ header {
     margin-left: 20.833vw;
     align-items: center;
     gap: 1.042vw;
-    margin-bottom:1.042vh;
+    margin-bottom: 1.042vh;
     width: 36.458vw;
     #content_boxL {
       width: 19.271vw;
@@ -121,11 +143,11 @@ header {
       .qna {
         margin: 0.781vw;
         h4 {
-          font:bold 1.042vw/1 "NotoSansKR";
+          font: bold 1.042vw/1 "NotoSansKR";
           margin-bottom: 0.208vw;
         }
         & > span {
-          font:normal 0.833vw/1 "NotoSansKR";
+          font: normal 0.833vw/1 "NotoSansKR";
         }
       }
     }
@@ -135,11 +157,11 @@ header {
       .qna {
         margin: 0.781vw;
         h4 {
-          font:bold 1.042vw/1 "NotoSansKR";
+          font: bold 1.042vw/1 "NotoSansKR";
           margin-bottom: 0.104vw;
         }
         & > span {
-          font:normal 0.833vw/1 "NotoSansKR";
+          font: normal 0.833vw/1 "NotoSansKR";
           em {
             font: italic 0.625vw/1 "NotoSansKR";
           }
@@ -147,7 +169,7 @@ header {
       }
     }
   }
-  #tool{
+  #tool {
     display: flex;
     flex-direction: column;
     width: 33.333vw;
@@ -159,63 +181,64 @@ header {
     & > h2 {
       font-size: 3.333vw;
 
-      width: max-content  ;
-      margin-left:1.458vw;
+      width: max-content;
+      margin-left: 1.458vw;
       margin-bottom: 1.563vw;
     }
-    .tool_wrap{ 
-
-      display: flex;     
+    .tool_wrap {
+      display: flex;
       width: max-content;
       margin: 0 auto;
       gap: 1.042vw;
-    .toll_list {
-      display: flex;
-      flex-direction: column;
-      width: 5.208vw;
-      height: 7.917vw;
+      .toll_list {
+        display: flex;
+        flex-direction: column;
+        width: 5.208vw;
+        height: 7.917vw;
 
-      & > article {
-        font: bold 1.042vw/1 "NotoSansKRBold";
-        text-align: center;
-        align-content: center;
-        margin-bottom: 1.042vw;
-        &:first-child {
-          width: 5.208vw;
-          height: 5.208vw;
-          border: 3px solid transparent;
-          background-image: linear-gradient(#fff,#fff), linear-gradient(to right, #c1dfc4 0%, #deecdd 100%);
-          background-origin: border-box;
-          background-clip: content-box, border-box;
-          border-radius: 1.042vw;
+        & > article {
+          font: bold 1.042vw/1 "NotoSansKRBold";
+          text-align: center;
+          align-content: center;
+          margin-bottom: 1.042vw;
+          &:first-child {
+            width: 5.208vw;
+            height: 5.208vw;
+            border: 3px solid transparent;
+            background-image: linear-gradient(#fff, #fff),
+              linear-gradient(to right, #c1dfc4 0%, #deecdd 100%);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            border-radius: 1.042vw;
+          }
         }
-      }
-      .progress {
-        border: 0.052vw solid #6cd484;
-        border-radius: 3px;
-        padding: 0.26vw;
-        .progress-level {
-          height: 0.26vw;
+        .progress {
+          border: 0.052vw solid #6cd484;
+          border-radius: 3px;
+          padding: 0.26vw;
+          .progress-level {
+            height: 0.26vw;
+          }
         }
       }
     }
-  }
   }
   &:hover .progress-level {
     height: 0.26vw;
     background: linear-gradient(to right, #00d1ff, #712eff);
-        animation: ani 1.7s;
-        animation-fill-mode: both;
+    animation: ani 1.7s;
+    animation-fill-mode: both;
   }
-.profile{
-  position: absolute;
-  width: 26.042vw;
-  height: 26.042vw;
-  right: 10.417vw;
-  bottom: 5.208vw;
+  .profile {
+    position: absolute;
+    width: 26.042vw;
+    height: 26.042vw;
+    right: 10.417vw;
+    bottom: 5.208vw;
 
-  background: url("https://skwid17.cafe24.com/Pj1-profile/profile.png") center/contain no-repeat;
-}
+    background: url("https://skwid17.cafe24.com/Pj1-profile/profile.png")
+      center/contain no-repeat;
+  }
 }
 /* 2page ani */
 #tool > .tool_wrap > .toll_list:nth-of-type(1) .progress-level {
@@ -246,17 +269,17 @@ header {
   }
 }
 
-
 /* 3page */
-#page_third{
+#page_third {
   width: 100%;
   height: 100vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("https://skwid17.cafe24.com/Pj1-profile/bg3page.png") center/cover no-repeat;
-  .cards{
+  background: url("https://skwid17.cafe24.com/Pj1-profile/bg3page.png")
+    center/cover no-repeat;
+  .cards {
     width: 62.5vw;
     display: flex;
     flex-wrap: wrap;
@@ -264,9 +287,10 @@ header {
     gap: 2.083vw 1.563vw;
     justify-content: center;
     align-items: center;
-    
+
     #card1 {
-      background: url("https://skwid17.cafe24.com/Pj1-profile/card1.png") center/cover no-repeat;
+      background: url("https://skwid17.cafe24.com/Pj1-profile/card1.png")
+        center/cover no-repeat;
 
       width: 26.042vw;
       height: 15.625vw;
@@ -275,19 +299,19 @@ header {
       justify-content: center;
       position: relative;
       overflow: hidden;
-      .card_desc{
+      .card_desc {
         color: #fff;
         background: linear-gradient(to top, #333, transparent);
         width: 26.042vw;
         height: 15.625vw;
         top: 110%;
         position: absolute;
-        flex-direction: column;  
+        flex-direction: column;
         text-align: center;
         align-content: center;
         transition: all 0.5s;
         transition-timing-function: cubic-bezier(0.755, 0.055, 0.475, 0.905);
-        h3{
+        h3 {
           font: bold 1.354vw/1 "NotoSansKR";
           margin-bottom: 1.042vw;
         }
@@ -296,11 +320,12 @@ header {
         }
       }
       &:hover .card_desc {
-      top: 0%;
+        top: 0%;
       }
     }
     #card2 {
-      background: url("https://skwid17.cafe24.com/Pj1-profile/card2.png") center/cover no-repeat;
+      background: url("https://skwid17.cafe24.com/Pj1-profile/card2.png")
+        center/cover no-repeat;
 
       width: 26.042vw;
       height: 15.625vw;
@@ -309,19 +334,19 @@ header {
       justify-content: center;
       position: relative;
       overflow: hidden;
-      .card_desc{
+      .card_desc {
         color: #fff;
         background: linear-gradient(to top, #333, transparent);
         width: 26.042vw;
         height: 15.625vw;
         top: 110%;
         position: absolute;
-        flex-direction: column;  
+        flex-direction: column;
         text-align: center;
         align-content: center;
         transition: all 0.5s;
         transition-timing-function: cubic-bezier(0.755, 0.055, 0.475, 0.905);
-        h3{
+        h3 {
           font: bold 1.354vw/1 "NotoSansKR";
           margin-bottom: 1.042vw;
         }
@@ -330,11 +355,12 @@ header {
         }
       }
       &:hover .card_desc {
-      top: 0%;
+        top: 0%;
       }
     }
     #card3 {
-      background: url("https://skwid17.cafe24.com/Pj1-profile/card3.png") center/cover no-repeat;
+      background: url("https://skwid17.cafe24.com/Pj1-profile/card3.png")
+        center/cover no-repeat;
 
       width: 26.042vw;
       height: 15.625vw;
@@ -343,19 +369,19 @@ header {
       justify-content: center;
       position: relative;
       overflow: hidden;
-      .card_desc{
+      .card_desc {
         color: #fff;
         background: linear-gradient(to top, #333, transparent);
         width: 500px;
         height: 15.625vw;
         top: 110%;
         position: absolute;
-        flex-direction: column;  
+        flex-direction: column;
         text-align: center;
         align-content: center;
         transition: all 0.5s;
         transition-timing-function: cubic-bezier(0.755, 0.055, 0.475, 0.905);
-        h3{
+        h3 {
           font: bold 1.354vw/1 "NotoSansKR";
           margin-bottom: 1.042vw;
         }
@@ -364,11 +390,12 @@ header {
         }
       }
       &:hover .card_desc {
-      top: 0%;
+        top: 0%;
       }
     }
     #card4 {
-      background: url("https://skwid17.cafe24.com/Pj1-profile/card4.png") center/cover no-repeat;
+      background: url("https://skwid17.cafe24.com/Pj1-profile/card4.png")
+        center/cover no-repeat;
 
       width: 26.042vw;
       height: 15.625vw;
@@ -377,19 +404,19 @@ header {
       justify-content: center;
       position: relative;
       overflow: hidden;
-      .card_desc{
+      .card_desc {
         color: #fff;
         background: linear-gradient(to top, #333, transparent);
         width: 26.042vw;
         height: 15.625vw;
         top: 110%;
         position: absolute;
-        flex-direction: column;  
+        flex-direction: column;
         text-align: center;
         align-content: center;
         transition: all 0.5s;
         transition-timing-function: cubic-bezier(0.755, 0.055, 0.475, 0.905);
-        h3{
+        h3 {
           font: bold 1.354vw/1 "NotoSansKR";
           margin-bottom: 1.042vw;
         }
@@ -398,7 +425,7 @@ header {
         }
       }
       &:hover .card_desc {
-      top: 0%;
+        top: 0%;
       }
     }
   }
@@ -412,8 +439,9 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: url("https://skwid17.cafe24.com/Pj1-profile/bg2page.png") center/cover no-repeat;
-  .last{
+  background: url("https://skwid17.cafe24.com/Pj1-profile/bg2page.png")
+    center/cover no-repeat;
+  .last {
     width: 100%;
     height: 100%;
     display: flex;
@@ -425,7 +453,7 @@ header {
     & > h1 {
       position: absolute;
       top: 40%;
-      font: bold 4.167vw/1 "NotoSansKR" ;
+      font: bold 4.167vw/1 "NotoSansKR";
       transition: all 0.7s;
       cursor: pointer;
       &:hover {
@@ -433,63 +461,57 @@ header {
         text-shadow: 0 15.625vw 5.208vw rgba(0, 0, 0, 0.5);
       }
     }
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: #555;
-  padding: 4.167vw 0;
-  border-top: 0.052vw solid #000;
-  .inner {
-    width: 61.979vw;
-    margin:  auto;
-  }
-  .upper {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 1.042vw;
-    border-bottom: 0.104vw solid #777;
-    & > h2 {
-      color: #111;
-      text-transform: uppercase;
-      font: bold 1.458vw/1 "NotoSansKR";
-      
-    }
-    ul {
-      display: flex;
-      gap: 1.563vw;
-      li{
-        &:hover {
-          color: #fff;
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: #555;
+      padding: 4.167vw 0;
+      border-top: 0.052vw solid #000;
+      .inner {
+        width: 61.979vw;
+        margin: auto;
+      }
+      .upper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1.042vw;
+        border-bottom: 0.104vw solid #777;
+        & > h2 {
+          color: #111;
+          text-transform: uppercase;
+          font: bold 1.458vw/1 "NotoSansKR";
         }
-          a{
-            font: bold 1.042vw/1 "NotoSansKR";
+        ul {
+          display: flex;
+          gap: 1.563vw;
+          li {
+            &:hover {
+              color: #fff;
+            }
+            a {
+              font: bold 1.042vw/1 "NotoSansKR";
+            }
           }
+        }
+      }
+      .lower {
+        padding-top: 0.521vw;
+        display: flex;
+        justify-content: space-between;
+        address {
+          color: #111;
+          font: normal 0.729vw/1 "NotoSansKR";
+        }
+        p {
+          color: #111;
+          font: normal 0.833vw/1 "NotoSansKR";
+        }
       }
     }
   }
-  .lower {
-    padding-top: 0.521vw;
-    display: flex;
-    justify-content: space-between;
-    address {
-      color: #111;
-      font: normal 0.729vw/1 "NotoSansKR";
-    }
-    p{
-      color: #111;
-      font: normal 0.833vw/1 "NotoSansKR";
-    }
-  }
 }
-}
-  }
-
-
-
 
 /* mobile */
 @media screen and (max-width: 1190px) and (min-width: 360px) {
-
 }
-

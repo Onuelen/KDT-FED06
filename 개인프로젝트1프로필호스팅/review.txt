@@ -1,0 +1,26 @@
+		***	24.07.12		***
+개인 프로젝트 리뷰
+
+/
+pager , auto slide,  modal 창 
+dark mode _ 가상 클래스
+.flowing-text _ 흐르는 텍스트 
+flow-wrap
+modal - js 구조, @meadia _ 반응형 구조 짜보기.
+toggle btn 
+
+* text animation
+ _ https://freefrontend.com/css-text-animations/
+
+
+
+
+
+
+
+
+
+
+
+
+
