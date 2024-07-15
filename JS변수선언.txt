@@ -1,0 +1,11 @@
+JS 변수 선언 _ var	let	const
+
+변수 = 전역변수 (global) / 지역변수    _ 가 있다.
+
+2015전-
+*var = 전역변수로만 사용됨.
+          -> A개발 test	| B개발 test => test 사용시 A,B 두개의 test중 var가 무엇을 선택해야할지 모름
+
+2015 후 업데이트
+
+let & const
