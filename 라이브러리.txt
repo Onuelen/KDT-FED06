@@ -8,3 +8,6 @@ https://cdnjs.com/
 Slider
 -slick slider
 -swiper
+
+외부 라이브러리 -> !important
+-> 이 요소를 최우선으로 작동한다. 꼭 필요할때만 사용.
