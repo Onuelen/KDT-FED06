@@ -1,0 +1,66 @@
+24/07/17
+
+*Grid
+-레이아웃 시스템, 많이 씀
+grid < flex.
+grid:명확하게 행,열이 정해진 상황에서 사용!
+>행,열에 대한 정렬이 깨짐
+
+*grid
+ - 축약_ colums , rows 같이 = gird
+ex) grid 100px 200px / 1fr 1fr 1fr
+                        행    -      /       열    |
+
+        grid-row-gap: 60px;
+        grid-column-gap: 20px;   = 칸 사이 간격
+= grid-gap 로 축약 _> 행 / 열   간격
+
+-0------------0-------------------0---------------------------------------------------
+1. display:grid
+ -> 후에 그리드
+
+grid template-colums : 열 몇 개
+grid template-rows : 행을 몇 개
+ > grid : 행 몇개 / 열 몇 개
+
+grid-row-gap : 행 사이의 간격
+grid-column-gap : 열 사이의 간격
+>grid-gap : 행 간격 열 간격
+
+justify-items : 이미 여러개 열을 나눠진 각 자식 요소의 아이템들의 수평 정렬 세팅
+> start / center / end / stretch
+
+justify-items : 이미 여러개 열을 나눠진 각 자식 요소의 아이템들의 수직 정렬 세팅
+> start / center / end / stretch
+
+justify-content : 이미 여러개 열로 나눠진 각 자식 요소를 하나의 컨텐츠로 인식 
+
+
+1fr / Auto
+=> 평상시에 거의 동일한 개념으로 사용
+=>column / row를 나누고자 할때 1/n
+*각각의 개별 아이템을 하나로 묶어서 content로 사용하고자 할 때, 차이점이 난다.
+Auto는  개별 아이템에 원래 적용되어있던 너비값을 식별해서 사용한다.
+1fr은 개별 아이템의 너비보다 < 부모요소의 전체 너비 중 n/1의 값을 우선 적용한다.
+
+
+align-content: 각 개별 아이템들을 하나의 content로 식별해서 수직 정렬을 주고자 할 때 사용
+ - *start , end, center   /   space - around , space -evenly, space - between
+
+justify-self: 부모가 아닌 자식요소에 적용할 수 있는 grid 문법 => 부모 요소의 정렬보다 우석적인 적용!!
+> start / center / end / stretch _ 자식요소에서 너비와 높이가 정해지지 않았다면 쪼그라든다.
+
+----------------------------
+
+그리드 레이아웃 시스템 정렬 기준:라인 카운트
+> 자식요소!! 라인 카운트
+
+열을 기준으로 병합을 하고자 할 때,
+            grid-column-start: 열이 시작될 라인 넘부;
+            grid-column-end: 열이 끝날 무렵의 라인 넘버;
+> grid-column : 시작 라인 넘버 / 종료 라인 넘버
+> grid-column : 시작 라인 넘버 / span 공간수
+
+
+
+

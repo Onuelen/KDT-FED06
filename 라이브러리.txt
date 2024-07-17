@@ -11,3 +11,21 @@ Slider
 
 외부 라이브러리 -> !important
 -> 이 요소를 최우선으로 작동한다. 꼭 필요할때만 사용.
+
+
+2024.07.17
+bootstrap > 프레임워크
+=> html,css => 레이아웃 구조.
+=> 절대로 html,css,js 포폴 제작시 - bootstrap 사용XXXX
+
+* react.js + bootstrap 
+
+
+*jQuery,SlickSlider = 라이브러리
+-> 공통적으로 사용하는 웹 표준 문법을 기반으로 
+그 위에 각자의 라이브러리의 고유한 특성을 가지고 있는 문법을 더할 뿐
+- React.js
+
+*bootstrap => 프레임워크 
+=>천지창조= 완전한 독자적인 문법 체계 및 질서
+=> vue.js // Angluar.js
