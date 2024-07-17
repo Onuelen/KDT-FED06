@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Gloock", serif;
 }
 .tab-inner {
   position: relative;
@@ -37,14 +37,19 @@ body {
       opacity: 1;
     }
     &#tab1:checked ~ .btn label[for="tab1"] {
-      color: crimson;
-      background: #fff;
+      background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+      padding: 6px 8px;
+      border-radius: 10px;
     }
     &#tab2:checked ~ .btn label[for="tab2"] {
-      color: crimson;
+      background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+      padding: 6px 8px;
+      border-radius: 10px;
     }
     &#tab3:checked ~ .btn label[for="tab3"] {
-      color: crimson;
+      background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+      padding: 6px 8px;
+      border-radius: 10px;
     }
   }
   .tabs {
@@ -57,19 +62,19 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      transition: all 0.5s;
+      transition: all 0.4s;
       div {
         width: 33.3%;
         height: 100vh;
         position: relative;
         &:nth-child(1) {
-          background: url("./images/photo-01.jpg") center/cover no-repeat;
+          background: url("./images/page01.jpg") center/cover no-repeat;
         }
         &:nth-child(2) {
-          background: url("./images/photo-02.jpg") center/cover no-repeat;
+          background: url("./images/page02.jpg") center/cover no-repeat;
         }
         &:nth-child(3) {
-          background: url("./images/photo-03.jpg") center/cover no-repeat;
+          background: url("./images/page03.jpg") center/cover no-repeat;
         }
         &:nth-child(1)::before {
           content: "";
@@ -78,7 +83,7 @@ body {
           height: 100%;
           left: 0;
           top: 0;
-          background: linear-gradient(135deg, gold, transparent);
+          background: linear-gradient(135deg, rgba(0,0,0,0.7), transparent);
         }
         &:nth-child(2)::before {
           content: "";
@@ -87,7 +92,7 @@ body {
           height: 100%;
           left: 0;
           top: 0;
-          background: linear-gradient(135deg, crimson, transparent);
+          background: linear-gradient(135deg,rgba(0,0,0,0.7), transparent);
         }
         &:nth-child(3)::before {
           content: "";
@@ -96,17 +101,18 @@ body {
           height: 100%;
           left: 0;
           top: 0;
-          background: linear-gradient(135deg, royalblue, transparent);
+          background: linear-gradient(135deg, rgba(0,0,0,0.7), transparent);
         }
         h1 {
           position: relative;
-          font-size: 120px;
+          font-size: 130px;
           color: #fff;
-          text-align: center;
           opacity: 0;
+          margin-top: 100px;
+          margin-left:420px;
           transform: translateY(-300px);
-          transition: 0.5s;
-          transition-delay: 0.5s;
+          transition: all 0.5s;
+          transition-delay: 0.4s;
         }
       }
     }
@@ -118,7 +124,7 @@ body {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     label {
       color: #fff;
       margin: 15px;
