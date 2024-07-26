@@ -1,0 +1,86 @@
+*0726
+1.JS & json _> data / import
+
+2.JS > Array
+2. > sort( )
+3. > map( )
+4. > fillter( )
+5. > find ( )
+
+3. select +option > value (*event handler : change)
+
+4.input > input (*event handler : input)
+
+----------------------------------------------------------------
+
+Chat bot
+_채널톡 >버튼 설치,설정 > 기본 자바 스크립트 
+
+채널 설정 _> 채널 프로필
+
+개인 설정_>개인 프로필
+
+채널 설정 > 상담> 인사말,운영시간 설정
+
+*유료 서비스 )_
+채널 설정 > AI 에이전트(ALF) _> FAQ,커맨드 등 기존 입력한 질문을 학습 > 답변함.
+
+------------------------------------
+서버 Fake Server (*데이터에 대한 구조를 설정 // in&out )
+
+git hub : 신규 레포짓 생성-> 파일명 *db.json -> 업로드 ->
+
+https://my-json-server.typicode.com/Onuelen/0726oliveyong-fake/db
+
+> script -> db.json 을 주소로 변경
+
+***용량 한계 있음 + 셀 개수 제한
+
+------------------------------------------------------------------------------------------
+
+BOM에서 window 객체 > 다른 기타 페이지로 이동할 수 있도록 해주는 속성 _location
+location//window.location.href
+
+
+------------------------------------------------------------------------------------------
+
+*URL 주소의 구성 방식.
+
+https_프로토콜
+://_통신규약
+www.naver.com:8080/path_도메인+포트번호
+
+파라미터 , 쿼리스트림 http://naver.com:8080/product/skincare/toner?category=skintoner&productname="dokdotoner"
+
+
+*인코딩 : 사람이 이해할 수 있는 언어를 컴퓨터가 이해할 수 있도록 바꿔줌
+*디코딩 : 컴퓨터의 언어를 사람이 이해할 수 있도록 바꿔주는 작업 
+
+json => 이전 페이지에서 순차적으로 받아온 2개의 Query 값이 존재.
+category / name => Json DB - > 
+
+***0726
+
+JS > Array > find ()
+
+CPU => 변수를 담을 메모리 공간 생성!!!
+
+전역변수 => 브라우저 //JS => parsing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
