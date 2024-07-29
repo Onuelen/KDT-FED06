@@ -88,19 +88,19 @@ body .cd-section > div .content {
   border: 1px solid #ddd;
   position: relative;
 }
-.project-inner input[name=tabmenu] {
+.project-inner input[name="tabmenu"] {
   display: none;
 }
 
-input[id=tab1]:checked ~ .tabs {
+input[id="tab1"]:checked ~ .tabs {
   margin-left: 0;
 }
 
-input[id=tab2]:checked ~ .tabs {
+input[id="tab2"]:checked ~ .tabs {
   margin-left: -100%;
 }
 
-input[id=tab3]:checked ~ .tabs {
+input[id="tab3"]:checked ~ .tabs {
   margin-left: -200%;
 }
 
@@ -184,7 +184,7 @@ input[id=tab3]:checked ~ .tabs {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .btn {
@@ -284,7 +284,13 @@ input[id=tab3]:checked ~ .tabs {
 .plan-inner .plan-feature > div.history-info .history-slider .slick-arrow {
   display: none !important;
 }
-.plan-inner .plan-feature > div.history-info .history-slider .slick-dots li button::before {
+.plan-inner
+  .plan-feature
+  > div.history-info
+  .history-slider
+  .slick-dots
+  li
+  button::before {
   font-size: 40px;
   color: #fff;
   top: 20px;
@@ -450,22 +456,38 @@ input[id=tab3]:checked ~ .tabs {
   color: #dc143c;
   font-weight: normal;
 }
-.contact-inner .contact-feature > div.contact-form .send-box input[type=email],
-.contact-inner .contact-feature > div.contact-form .send-box input[type=text],
+.contact-inner
+  .contact-feature
+  > div.contact-form
+  .send-box
+  input[type="email"],
+.contact-inner .contact-feature > div.contact-form .send-box input[type="text"],
 .contact-inner .contact-feature > div.contact-form .send-box textarea {
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 10px;
   transition: all 0.3s;
 }
-.contact-inner .contact-feature > div.contact-form .send-box input[type=email]:focus,
-.contact-inner .contact-feature > div.contact-form .send-box input[type=text]:focus,
+.contact-inner
+  .contact-feature
+  > div.contact-form
+  .send-box
+  input[type="email"]:focus,
+.contact-inner
+  .contact-feature
+  > div.contact-form
+  .send-box
+  input[type="text"]:focus,
 .contact-inner .contact-feature > div.contact-form .send-box textarea:focus {
   outline: none;
   border: 1px solid #1db1f0;
   box-shadow: 0 0 5px #1db1f0;
 }
-.contact-inner .contact-feature > div.contact-form .send-box input[type=submit] {
+.contact-inner
+  .contact-feature
+  > div.contact-form
+  .send-box
+  input[type="submit"] {
   background: #1db1f0;
   color: #fff;
   padding: 12px 20px;
@@ -476,7 +498,11 @@ input[id=tab3]:checked ~ .tabs {
   width: 318px;
   justify-content: flex-start;
 }
-.contact-inner .contact-feature > div.contact-form .send-box input[type=submit]:hover {
+.contact-inner
+  .contact-feature
+  > div.contact-form
+  .send-box
+  input[type="submit"]:hover {
   background: #222;
 }
 .contact-inner .contact-feature > div.contact-info h4 {
@@ -540,4 +566,4 @@ input[id=tab3]:checked ~ .tabs {
 .modal .hiring-main .hiring-heading .hiring-heading h1 {
   font-size: 60px;
   font-weight: 200;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

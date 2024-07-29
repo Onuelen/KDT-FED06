@@ -1,0 +1,5 @@
+animation-fill-mode: both;
+animation: slideup 2s linear both;
+both _ 애니메이션은 기본 속성값을 따라가려는 속성을 가지고 있다. 
+
+*both 사용시 -> 애니메이션 종료시 모습을 animation key frame의 100%에 둔 속성을  유지시킴
