@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Oxygen:wght@300;400;700&display=swap');
+
 
 @import url(./reset.css);
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 15px;
 }
 
@@ -43,6 +44,15 @@ header {
     margin: 0 auto;
     margin-top: 20px;
     justify-content: space-between;
+    .logo {
+      a{
+        img{
+          border: 1px solid #f00;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
     .gnb {
       display: flex;
       gap: 20px;
@@ -78,20 +88,21 @@ header {
 /* intro */
 .intro {
   height: 100vh;
-  background: url("./images/intro.jpg") center/cover no-repeat;
+  background: url("./img/bgimg.png") center/cover no-repeat;
   display: flex;
-  align-items: center;
   .heading {
-    text-align: center;
+    text-align: left;
     color: #fff;
+    margin-top: 300px;
     h1 {
       font-size: 70px;
       margin-bottom: 40px;
+      border: 1px solid #f00;
     }
     p {
       font-size: 22px;
       line-height: 1.5rem;
-      padding: 0 150px;
+      border: 1px solid #f00;
     }
   }
 }

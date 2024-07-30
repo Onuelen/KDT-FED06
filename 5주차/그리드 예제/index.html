@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent{
+      display: grid;
+      grid-gap: 10px ;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: auto auto auto;
+      background: crimson;
+      border: 5px solid #000;
+      div{
+        border: 1px solid #000;
+        &.item1 {
+          background: khaki;
+          grid-column: 1 / span 3;
+                  }
+                  &.item2 {
+                  }
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="item1">header</div>
+    <div class="item2">banner</div>
+    <div class="item3">this is main content</div>
+    <div class="item4">aside</div>
+    <div class="item5">footer</div>
+  </div>
+</body>
+</html>
