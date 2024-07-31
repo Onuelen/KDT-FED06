@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contain {
+  input[type="radio"] {
+    /* display: none; */
+  }
+  input[type="radio"]:nth-of-type(1):checked
+    ~ .label_container
+    label:nth-of-type(1) {
+    border: 1px solid #000;
+  }
+  .label_container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    label {
+      cursor: pointer;
+      height: 100px;
+      border: 1px solid #f00;
+      width: 300px;
+      text-align: center;
+      height: 100%;
+      line-height: 100px;
+    }
+  }
+  .contents_container {
+    position: relative;
+    div {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      border: 1px solid #f00;
+    }
+    input[type="radio"]:checked + label + div {
+      display: block;
+    }
+  }
+}
