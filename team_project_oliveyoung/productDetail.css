@@ -1,0 +1,60 @@
+@import url(./reset.css);
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.product-detail-A {
+  border: 1px solid #f00;
+  width: 925px;
+  height: 716px;
+  display: flex;
+  .A-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    .thumbs {
+      img {
+        width: 344px;
+        height: 458px;
+      }
+    }
+    .card-gift {
+      ul {
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .A-right {
+    .title {
+      h2 {
+        font-size: 32px;
+        font-weight: 400;
+      }
+    }
+    .detail {
+      .detail-left {
+        .price {
+          font-size: 24px;
+        }
+        .discount {
+          font-size: 16px;
+          color: #f00;
+        }
+        .default-price {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .desc {
+    span {
+    }
+  }
+  .benefits {
+  }
+}
