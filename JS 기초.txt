@@ -312,12 +312,22 @@ return  : A함수의 결과값을 B라는 함수 혹은 외부에서 사용할 �
 
 
 
+매개변수 & 인자값 => 전개연산자!!
+: Spread Operator //
+=> map // json 데이터 + id 값(*원본 데이터 유지 + New 생성 데이터)
+=> 참조타입 => 
+=> 매개변수 개수 제한요소 
 
+시간 내장 함수
+1) 콜백함수 사용할 수 있음
+2) this 객체를 사용했을 때, 지칭하는 것이 window
 
+ 
+setInterval( ) : 특정 시간에 맞춰서 반복적으로 무언가 자동 실행. 하고 싶을때 사용
 
+setTimeout( ) : 특정시간 이후에 실행시키고자 할 때.
 
-
-
+ClearInterval( ) : set Interval ( )을 통해서 반복실행되고 있는 해당 함수를 정지시켜 줄 수 있는 단짝 친구.
 
 
 
@@ -342,21 +352,41 @@ return  : A함수의 결과값을 B라는 함수 혹은 외부에서 사용할 �
 
 
 
+***6. DOM
+- DOM을 왜 배워야 하는가??
+- JS 탄생한 이유?
+> html,css 웹 브라우저 X // 인터렉티브한 소통!!
+> 태생적으로 구조 & 스타일
+> html, css (*정적인 구조) + JS (*HTML,CSS 를 찾아와서 동적인 기능을 부여)
+-> ? 찾아와야함. html,css를 웹에디터를 통해 작성하는 순간=> JS 가 html,css를 객체로 만든다.
+
+Document Object  Model = > DOM (* 문서 객체 모델)
+
+BOM > DOM 
+Browser Object Model ( * 브라우저 객체 모델)
+
+html을 통해 > 태그> html 채그 > 문법속에서 지칭하는 단어.
+-DOM Tree
+JS>Node
+
+DOM 에서 어떤 Node를 찾아와서 해당 Node 안에 포함된 요소를 가져오고 싶을 때!!!
+1)innerHTML :html요소 + text 모든걸 찾아올때
+>DOM에 있는 요소 
+
+2)innerText: 특정 노드 안에 담긴 text 요소만 찾아옴
+>HTML 안에 들어가있는 텍스트를 추출해서 텍스트만 출력 
+
+3) textContent : innerHTML 단계 => html 태그만 걷어내는 상태
 
 
+*가상 클래스 !!!* : 스위치 역할
+> A면 불이 켜지고, B면 불이 꺼진다.
+> 클래스가 적용되어 있으면 불이 켜지고, 클래스가 사라지면 불이 꺼진다.
 
+classList  = > 속성 : 특정 노드에 class 여부. 유무 체크
+contains  => 메서드 : 특정 클래스가 있으면 true / 없으면 false 
 
-
-
-
-
-
-
-
-
-
-
-
+dom 
 
 
 
