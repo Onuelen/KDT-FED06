@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+body .calc {
+  width: 350px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+body .calc input {
+  height: 36px;
+}/*# sourceMappingURL=style2.css.map */

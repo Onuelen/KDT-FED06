@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .contents h3 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 2.5;
+}
+main .contents .content {
+  border: 1px solid #000;
+  border-radius: 20px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+main .contents .content .content-img {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 60px;
+}
+main .contents .content .content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 350px;
+}
+main .contents .content .content-right .content-desc span:first-child {
+  font-weight: bold;
+  margin-right: 30px;
+}
+main .contents .content .content-right .desc-btn {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.more-read {
+  margin-top: 50px;
+  width: 700px;
+  display: none;
+  opacity: 0;
+}
+.more-read .title {
+  margin-bottom: 50px;
+  width: 300px;
+  line-height: 2.5;
+  font-weight: bold;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+}/*# sourceMappingURL=style1.css.map */
