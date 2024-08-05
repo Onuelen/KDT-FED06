@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+ul, li {
+  list-style: none;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -25,6 +29,7 @@ body .calc {
   display: flex;
   flex-direction: column;
 }
-body .calc input {
-  height: 36px;
+body .calc ul li input {
+  height: 40px;
+  width: 350px;
 }/*# sourceMappingURL=style2.css.map */

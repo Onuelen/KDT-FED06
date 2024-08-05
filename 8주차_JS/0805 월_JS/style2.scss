@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+ul,li{
+  list-style: none;
+}
 body {
   height: 100vh;
   display: flex;
@@ -22,8 +25,14 @@ body {
     gap: 10px;
     display: flex;
     flex-direction: column;
-    input {
-      height: 36px;
+    ul{
+      li{
+        input {
+      height: 40px;
+      width: 350px;
     }
+      }
+    }
+    
   }
 }
