@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./script1.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        .container {
+          width: 1200px;
+          .heading {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .desc {
+              width: 70%;
+              p {
+                margin: 20px 0;
+              }
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <div class="img">
+          <img
+            style="width: 280px"
+            src="https://assets.adidas.com/images/w_600,f_auto,q_auto/457101e171254b30a88add0182df5358_9366/OG_Black_IH8047_01_standard.jpg"
+            alt="adidas"
+          />
+        </div>
+        <div class="desc">
+          <h1>상품설명</h1>
+          <h2>상품명 : 나이키 G.T 허슬 3 EP 일렉트릭</h2>
+          <p>
+            이중 스택 줌에어 유닛이 막강한 파워를 제공하고 통기성 좋은 갑파가
+            안정성과 시원함을 유지해줍니다.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+            officia perferendis autem recusandae fugit ea esse suscipit soluta
+            praesentium atque quibusdam molestiae tempore laboriosam rem,
+            delectus et, nihil assumenda. Voluptates. Necessitatibus, illo amet
+            hic consequuntur ad, ullam iste rem a ut consectetur minus
+            voluptatum enim numquam, ab deserunt nostrum facilis molestias
+            repellendus? Fugit cum quibusdam minus quas rerum tempora eum.
+          </p>
+          <button id="order">상품주문하기</button>
+        </div>
+      </div>
+      <div class="orderInfo"></div>
+    </div>
+  </body>
+</html>
