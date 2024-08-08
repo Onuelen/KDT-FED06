@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+.container form input {
+  font-size: 20px;
+  width: 300px;
+}
+.container button {
+  width: 350px;
+  height: 50px;
+}
+.container caption tr th {
+  border: 1px solid #f00;
+}/*# sourceMappingURL=style4.css.map */

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.inner {
+  width: 1300px;
+  margin: 0 auto;
+  height: fit-content;
+}
+ul,
+li {
+  list-style: none;
+}
+
+.tabs {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  li {
+    padding: 10px 30px;
+    &.active {
+      background: green;
+      color: #fff;
+    }
+  }
+}
+
+.contents {
+  margin-top: 10px;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid #00f;
+    text-align: center;
+    display: none;
+    &.active {
+      background: #bbb;
+      display: block;
+    }
+  }
+}
