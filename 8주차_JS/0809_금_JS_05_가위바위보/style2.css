@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100..900&family=Oxygen:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Gugi", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .container .block {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+body .buttons {
+  display: flex;
+  gap: 18px;
+}
+body .buttons button {
+  font-family: "Gugi", sans-serif;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+body .buttons button.red {
+  background: #e74c3c;
+}
+body .buttons button.blue {
+  background: #3498db;
+}
+body .buttons button.green {
+  background: #1abc9c;
+}
+body .result {
+  font-size: 2rem;
+  font-weight: bold;
+}/*# sourceMappingURL=style2.css.map */
