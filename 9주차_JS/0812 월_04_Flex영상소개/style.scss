@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 ul,
 li {
   list-style: none;
@@ -45,6 +46,7 @@ header {
   z-index: 3;
   // border: 10px solid pink;
   h1 {
+    text-align: center;
     font-size: 0;
     color: $main-light-color;
     i {
@@ -55,9 +57,9 @@ header {
       font: normal 0.8vw/1 "arial";
     }
   }
-  addres {
+  address {
+    text-align: center;
     font: normal 11px/1.2 "arial";
-    color: #888;
     color: $sub-text-color;
   }
 }
@@ -68,11 +70,13 @@ nav {
   top: 10vh;
   right: 5vw;
   z-index: 3;
+  // border: 10px solid aqua;
   ul {
     display: flex;
     gap: 30px;
     a {
       font-size: 1.4rem;
+      color: $sub-text-color;
     }
   }
 }
@@ -85,14 +89,13 @@ section {
   padding-top: 140px;
   position: relative;
   z-index: 1;
-  border: 10px solid yellow;
   article {
     position: relative;
     flex: 1;
     padding: 70px 40px 100px;
     opacity: 0.6;
     transition: all 1s;
-    z-index: 1s;
+    z-index: 1;
     cursor: pointer;
     &::before {
       content: "";
@@ -113,15 +116,20 @@ section {
         left: 0;
         opacity: 1;
       }
-      & .inner {
+      & .inner > .txt {
+        width: 75%;
+        h2 {
+          font-size: 5vw;
+          &::after {
+            width: 120px;
+            background: orange;
+            margin-top: 50px;
+          }
+        }
       }
-    }
-    &::before {
-    }
-    & .inner > .txt {
-      width: 75%;
-      h2 {
-        font-size: 5vw;
+      & .inner > figure {
+        filter: saturate(120%);
+        height: 25vh;
       }
     }
     .inner {
@@ -136,7 +144,7 @@ section {
         transition: all 0.5s;
         h2 {
           color: $main-light-color;
-          font: $main-light-color;
+          font: normal 2vw/1 "arial";
           margin-bottom: 40px;
           padding-top: 70px;
           transition: all 1s;
@@ -160,6 +168,7 @@ section {
         }
       }
       figure {
+        border: 1px solid #f00;
         width: 100%;
         height: 15vh;
         background: $sub-text-color;
@@ -178,7 +187,7 @@ section {
   }
 }
 
-/* Aside */
+/* aside */
 aside {
   position: absolute;
   top: 0;
@@ -186,11 +195,12 @@ aside {
   opacity: 0;
   width: 100%;
   height: 100vh;
-  padding: 20vw 7vw 14vh 20ve;
-  justify-content: center;
+  padding: 20vh 7vw 14vh 20vw;
+  background: $main-bg-color;
   display: flex;
-  z-index: 2;
+  justify-content: space-between;
   transition: all 1s;
+  z-index: 2;
   &.on {
     opacity: 1;
     left: 0;
@@ -199,8 +209,8 @@ aside {
     width: 25%;
     height: 100%;
     h1 {
-      color: &$sub-text-color;
-      font: normal 2.5rem "arial";
+      color: $sub-text-color;
+      font: normal 2.5rem/1 "arial";
     }
     p {
       color: $main-light-color;
@@ -213,6 +223,7 @@ aside {
   }
   figure {
     width: 72%;
+    height: 100%;
     video {
       width: 100%;
       height: 100%;

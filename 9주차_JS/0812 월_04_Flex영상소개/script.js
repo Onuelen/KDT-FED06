@@ -4,14 +4,14 @@ const close = aside.querySelector("span");
 
 items.forEach((item) => {
   item.addEventListener("mouseenter", (e) => {
-    const video = e.currentTarget.querySelector("video").play();
+    e.currentTarget.querySelector("video").play();
   });
 
   item.addEventListener("mouseleave", (e) => {
-    const video = e.currentTarget.querySelector("video").pause();
+    e.currentTarget.querySelector("video").pause();
   });
 
-  item.addEventListener("click", () => {
+  item.addEventListener("click", (e) => {
     let tit = e.currentTarget.querySelector("h2").innerText;
     let txt = e.currentTarget.querySelector("p").innerText;
     let vidSrc = e.currentTarget.querySelector("video").getAttribute("src");

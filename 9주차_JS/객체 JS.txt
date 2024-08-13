@@ -1,0 +1,21 @@
+10.객체 
+ = JS = 객체지향 브라우저 모델
+- window : 브라우저 객체 모델 
+- JS : Math // Date( ) => 내장객체
+- 객체의 형태!!!
+- { key : value } => property (*속성)
+- CSS attribute
+
+min- 최소한
+
+만약 Html을 작성한 문서 flex,grid 반응형 최적화할 수 있는암약ㅊ;==
+
+
+
+
+
+
+
+
+
+
