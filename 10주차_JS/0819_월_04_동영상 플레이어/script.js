@@ -3,6 +3,8 @@ const video = document.querySelector("video");
 const volumeBar = document.querySelector("input[type='range']");
 const progressCover = document.querySelector(".progress");
 const player = document.querySelector(".player");
+const rateButtons = document.querySelectorAll(".rate");
+const fullButton = document.querySelector("#fullscreenBtn");
 
 const play = () => {
   playButton.innerText = "| |";
@@ -23,7 +25,6 @@ const setVolume = (e) => {
 };
 
 const formatting = (time) => {
-  // console.log(time);
   let sec = Math.floor(time % 60);
   let min = Math.floor(time / 60);
   let hour = Math.floor(time / 3600);
@@ -65,6 +66,11 @@ const videoPoint = (e) => {
   video.currentTime = clickedTime;
 };
 
+const setRate = (e) => {
+  const { rate } = e.target.dataset;
+  video.playbackRate = rate;
+};
+
 playButton.addEventListener("click", togglePlay);
 video.addEventListener("click", togglePlay);
 video.addEventListener("timeupdate", updateTime);
@@ -72,4 +78,14 @@ video.addEventListener("timeupdate", updateProgress);
 volumeBar.addEventListener("change", setVolume);
 progressCover.addEventListener("click", (e) => {
   videoPoint(e);
+});
+rateButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    setRate(e);
+  });
+});
+
+//full Screen
+fullButton.addEventListener("click", () => {
+  video.requestFullscreen();
 });

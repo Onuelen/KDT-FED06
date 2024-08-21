@@ -8,7 +8,7 @@
 /* Variable */
 $maind-dark-color: #000;
 $main-light-color: #fff;
-$main-progress-color: #dc4314;
+$main-progress-color: #ff2323;
 
 body {
   display: flex;
@@ -74,6 +74,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 10px;
+    gap: 20px;
 
     .menu {
       display: flex;
@@ -83,7 +84,7 @@ body {
       button {
         cursor: pointer;
         width: 40px;
-        height: 40px;
+        height: 35px;
         text-align: center;
         line-height: 6px;
         border: none;
@@ -91,7 +92,7 @@ body {
         font-size: 15px;
         background: $main-progress-color;
         color: $main-light-color;
-        padding-left: 3px;
+        padding-left: 2px;
         line-height: 3px;
       }
       span {
@@ -121,6 +122,13 @@ body {
           gap: 8px;
           font-size: 90%;
         }
+      }
+      #fullscreenBtn {
+        font-size: 0.8rem;
+        padding-left: 0;
+        background: none;
+        border: 2px solid $main-progress-color;
+        border-radius: 0;
       }
     }
   }
