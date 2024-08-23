@@ -54,7 +54,57 @@ readyState :
 
 	=====
 reqres.in/api/product/10
-XMLHttpRequst를 화룔하며됨
+XMLHttpRequst를
+
+0823 금
+- 비동기 프로그래밍
+> Callback // Promise // fetch // async & await
+
+1. 자바스크립트 언어 정의
+- 객체지향 프로그래밍 언어
+- 프로토타입 기반 프로그래밍 언어
+ - 싱글 스레드(Thread = 길 / 도로) 방식 프로그래밍 언어
+ - 싱글스레드 > 동기처리 방식
+ - 멀티스레드 > 비동기처리 방식
+ - 콜백함수 
+ - 프로미스
+ - fetch 
+ - async & await
+
+원래 JS 는 싱글스레드 언어이다 = 동기처리
+콜백함수를 활용해서 멀티스레드 언어 인것 처럼 비동기처리 방식 활용가능.
+
+
+콜백함수
+
+async & await
+
+1)카카오 맵 API
+
+2) 전국 캠핑장 정보
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
