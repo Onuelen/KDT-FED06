@@ -1,0 +1,12 @@
+API
+- LocalStorage // Todolist
+- Geolocation // Weather
+- Geolocation // Kakao Map + Public Data(*캠핑장)
+- Canvas API > 그림판
+
+번외 
+> svg
+> 라이브러리 
+> window 이벤트 
+
+---------------------
