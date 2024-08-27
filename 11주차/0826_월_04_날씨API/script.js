@@ -6,7 +6,7 @@ const getCurrentWeader = (latitude, longitude) => {
   fetch(URL)
     .then((response) => response.json())
     .then((data) => {
-      const icon = document.querySelector(".weather");
+      const icon = document.querySelector(".icon");
       const temp = document.querySelector(".temp");
       const city = document.querySelector(".city");
       const weather = document.querySelector(".wearher");

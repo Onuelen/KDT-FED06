@@ -10,3 +10,8 @@ API
 > window 이벤트 
 
 ---------------------
+
+API 1_ Localstorage
+API 2_Geolocation
+API 3_canvas
+
