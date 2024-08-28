@@ -1,24 +1,22 @@
-// 지오로케이션 => 사용자의 위치를 파악하ㅣㅔ 쥘===========================
+// geolocation => 사용자의 위치를 파악하기 위한 목적 API
 
-// Geolocation(successCB, errorCB); 사용자의 위차를 기반을 위한 복적 API
+//getCurrentPoision(successCB, errorCB, options)
 
-const getLocation = document.querySelector("#geoLocation");
+const getLocation = document.querySelector("#getLocation");
 
 const showPosition = (position) => {
   console.log(position);
-  const result = document.querySelector("result");
-  result.innerText = `위도: ${position.coors.latitude} ,  경도 : ${
-    (position.coordfs, longitude)
-  }`;
+  const result = document.querySelector("#result");
+  result.innerText = `위도 : ${position.coords.latitude} , 경도 : ${position.coords.longitude}`;
 };
 
-const errorPosition = (err) => {
+const erroPostion = (err) => {
   alert(err.message);
 };
 
 getLocation.addEventListener("click", () => {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
+    navigator.geolocation.getCurrentPosition(showPosition, erroPostion);
 
     const options = {
       enableHighAccuracy: true,
@@ -28,7 +26,7 @@ getLocation.addEventListener("click", () => {
 
     let watchId = navigator.geolocation.watchPosition(
       showPosition,
-      errorPosition,
+      erroPostion,
       options
     );
 
