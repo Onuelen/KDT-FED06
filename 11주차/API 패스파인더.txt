@@ -1,0 +1,50 @@
+globalCompositeOperation => 패스파인더
+
+source / destination
+
+source-over : 그래픽 요소 정렬 위치 기본값 , 먼저 입력된 요소는 뒤로, 나중에 그려진건 앞으로
+
+source-in  : = intersect
+
+source-out : = minus-front
+
+source-atop : 교차 살리고, 교차가 되지못한 destination 영역은 불투명하게 처리     crop유사
+
+destination- in / out / over / atop:
+over = 맨앞으로
+in = intersect 교차 살리기
+out = 교차살리기 + 나머지 투명
+atop =  교차 살리고, 교차가 되지못한 destination 영역은 불투명하게 처리     crop유사
+
+기타-
+
+lighter : source, destination 영역의 색상값이 합쳐져서 출력    RGB가산혼합
+
+darken : 교차 영역 색상값의 차이만큼 출력    CMYK감산혼합
+
+copy : 나중에 그린 source 요소만 출력 
+
+xor : source, destination 모두 출력, 교차 영역, 투명하게 처리
+
+
+객체형태 1개 -> 원 1개 생성
+객체형태 20개 -?> 원 20개 생성
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
