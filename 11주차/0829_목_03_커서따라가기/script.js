@@ -1,11 +1,30 @@
 const h1 = document.querySelector("h1");
 const box = document.querySelector(".box");
 
+let x = 0;
+let y = 0;
+let targetX = 0;
+let targetY = 0;
+const speed = 0.1;
+
 window.addEventListener("mousemove", (e) => {
-  let x = e.pageX;
-  let y = e.pageY;
+  x = e.pageX;
+  y = e.pageY;
+
+  console.log(x, y);
+  console.log(targetX, targetY);
 
   h1.innerText = `X : ${x} Y : ${y}`;
 });
 
-// console.log(h1, box);
+const loop = () => {
+  targetX += (x - targetX) * speed;
+  targetY += (y - targetY) * speed;
+
+  box.style.left = `${targetX}px`;
+  box.style.top = `${targetY}px`;
+
+  window.requestAnimationFrame(loop);
+};
+
+loop();
