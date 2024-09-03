@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- anime.js -->
+    <script src="./anime.js"></script>
+    <script defer src="./script.js"></script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      section {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .circle {
+          position: absolute;
+          top: calc(50% - 24%);
+          left: calc(50% - 51% + 7px);
+          width: 15px;
+          height: 15px;
+          background: #fff;
+          border-radius: 51%;
+        }
+        .eye {
+          position: absolute;
+          width: 10px;
+          height: 15px;
+          background: #fff;
+          border-radius: 51%;
+          left: calc(50% + 260px);
+          top: calc(50% - 220px);
+          animation: ani 1.5s ease-in-out infinite alternate;
+        }
+        svg {
+          fill: none;
+          stroke: #fff;
+          stroke-width: 2;
+          width: 1400px;
+        }
+      }
+
+      @keyframes ani {
+        0% {
+          height: 15px;
+          transform: skew(10deg);
+        }
+        70% {
+          height: 15px;
+          transform: skew(10deg);
+        }
+        100% {
+          height: 7px;
+          transform: skew(15deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <div class="eye"></div>
+      <svg class="svg" viewBox="0 0 1280 800">
+        <path
+          d="M579.928 394.902C539.095 475.235 459.228 637.602 466.428 644.402C475.428 652.902 505.428 629.402 527.428 599.902C549.428 570.402 599.928 457.902 604.428 449.902C608.928 441.902 626.428 456.402 614.928 460.402C603.428 464.402 585.428 482.402 600.928 475.402C616.428 468.402 690.928 429.902 697.428 435.402C703.928 440.902 706.428 445.902 698.428 493.902C690.428 541.902 704.428 541.902 701.928 554.902C699.428 567.902 696.428 601.902 704.428 599.902C712.428 597.902 729.928 581.902 741.928 559.402C753.928 536.902 771.428 466.402 760.428 405.902C758.428 404.735 762.228 398.402 793.428 382.402C832.428 362.402 912.928 287.402 917.928 280.902C922.928 274.402 987.428 210.902 986.928 189.402C986.428 167.902 979.928 182.402 968.428 175.902C956.928 169.402 972.928 180.402 978.928 174.402C984.928 168.402 987.428 138.902 879.928 163.902C772.428 188.902 575.428 215.902 404.428 439.902C368.428 488.402 336.928 538.402 249.428 508.902C219.428 493.402 205.928 507.402 186.428 492.902C166.928 478.402 174.428 527.902 239.928 529.402C305.428 530.902 264.928 540.402 257.928 547.902C250.928 555.402 272.428 610.402 261.928 626.402C251.428 642.402 281.928 636.902 291.928 600.902C301.928 564.902 287.428 538.402 304.928 543.902C322.428 549.402 339.428 521.902 364.428 526.902C389.428 531.902 484.928 529.402 523.428 494.902C539.928 476.402 535.428 463.902 537.928 462.402C540.428 460.902 559.928 435.902 559.928 427.402C559.928 418.902 578.928 389.402 579.928 394.902Z"
+        />
+      </svg>
+    </section>
+  </body>
+</html>

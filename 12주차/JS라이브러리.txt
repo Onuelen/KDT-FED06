@@ -1,0 +1,9 @@
+JS라이브러리
+1.  fullpage
+2.  anime.js
+
+easings.net/ko
+
+stagger() => 특정 패턴 이벤트 혹은 스타일 혹은 이동 등을 반복적으로 실행!!!
+
+timeline( ) => 어떤 순서에 맞춰서 무언가를 차례차례 실행 (1끝나고 2실행)
