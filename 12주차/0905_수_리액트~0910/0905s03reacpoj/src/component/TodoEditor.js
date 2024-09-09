@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState, useRef } from "react";
 import "./TodoEditor.css";
 
 const TodoEditor = ({ onCreate }) => {
@@ -21,20 +21,18 @@ const TodoEditor = ({ onCreate }) => {
     onCreate(content);
     setContent("");
   };
-
-
   return (
     <div className="TodoEditor">
-      <h4>새로운 Todo 작성하기 </h4>
+      <h4>새로운 Todo 작성하기 🧾</h4>
       <div className="editor_wrapper">
         <input
           ref={inputRef}
           value={content}
           onChange={onChangeContent}
           onKeyDown={onKeyDown}
-          placeholder="새로운 Todo..."
+          placeholder="새로운 ToDo..."
         />
-        <button onClick={onsubmit}>추가</button>
+        <button onClick={onSubmit}>추가</button>
       </div>
     </div>
   );
