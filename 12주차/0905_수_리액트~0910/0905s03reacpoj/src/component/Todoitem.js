@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Todoitem.css";
+import { TodoContext } from "../App";
 
-const TodoItem = ({ id, isDone, content, createdDate, onUpdate, onDelete }) => {
-  console.log(`${id} TodoItem업데이트`);
+const TodoItem = ({ id, isDone, content, createdDate }) => {
+  const { onUpdate, onDelete } = useContext(TodoContext);
   const onChangeCheckbox = () => {
     onUpdate(id);
   };
@@ -20,7 +21,7 @@ const TodoItem = ({ id, isDone, content, createdDate, onUpdate, onDelete }) => {
         {new Date(createdDate).toLocaleDateString()}
       </div>
       <div className="btn_col">
-        <button onClick={onDelete}>삭제</button>
+        <button onClick={onClickDelete}>삭제</button>
       </div>
     </div>
   );

@@ -107,8 +107,16 @@ useRef( ):
 useEffect( ) :
 - 컴포넌트가 어떤 단계 및 상황에 도착했을 때에 무언가를 실행 시켜야할 때
 
+useReducer( ) :
 
 
+useMemo( ) :
+
+
+useContext( ) :
+
+
+useNavigate ( ):
 
 
 

@@ -1,10 +1,10 @@
 import "./App.css";
-import { useRef, useReducer, useCallback } from "react";
+import React, { useRef, useReducer, useCallback } from "react";
 import Header from "./component/Header";
 import TodoEditor from "./component/TodoEditor";
 import TodoList from "./component/TodoList";
-// import TestComp from "./component/TestComp";
-import { type } from "@testing-library/user-event/dist/type";
+
+export const TodoContext = React.createContext();
 
 const mockTodo = [
   {
@@ -74,12 +74,14 @@ function App() {
       targetId,
     });
   }, []);
+
   return (
     <div className="App">
-      {/* <TestComp /> */}
       <Header />
-      <TodoEditor onCreate={onCreate} />
-      <TodoList todo={todo} onUpdate={onUpdate} onDelete={onDelete} />
+      <TodoContext.Provider value={{ todo, onCreate, onUpdate, onDelete }}>
+        <TodoEditor />
+        <TodoList />
+      </TodoContext.Provider>
     </div>
   );
 }
