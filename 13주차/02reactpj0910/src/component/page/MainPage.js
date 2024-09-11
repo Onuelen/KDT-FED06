@@ -6,14 +6,12 @@ import Button from "../ui/Button";
 import data from "../../data.json";
 
 const Wrapper = styled.div`
-  width: calc(100% -32px);
-  border: 1px solid #ccc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: calc(100% - 32px);
   margin: 0 auto;
   padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Container = styled.div`
