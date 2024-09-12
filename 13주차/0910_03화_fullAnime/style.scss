@@ -169,7 +169,7 @@ nav {
         height: 35vw;
         max-height: 550px;
         margin-left: 50px;
-        opacity: 0;
+        opacity: 1;
         transform: translateY(-50px);
         .sec2_slider {
           position: relative;
@@ -275,6 +275,7 @@ nav {
       left: 50%;
       transform: translate(-50%, -50%);
       opacity: 1;
+      z-index: 2;
     }
     .img_wrap {
       width: 500px;
@@ -296,6 +297,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 }
 #fp-nav ul li a span {
