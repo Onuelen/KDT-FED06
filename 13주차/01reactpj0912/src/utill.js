@@ -22,3 +22,41 @@ export const getEmotionImgById = (emotionId) => {
       return null;
   }
 };
+
+export const getFormattedDate = (targetDate) => {
+  const year = targetDate.getFullYear();
+  let month = targetDate.getMonth() + 1;
+  let date = targetDate.getDate();
+
+  if (month < 10) month = `0${month}`;
+  if (date < 10) date = `0${date}`;
+  return `${year}-${month}-${date}`;
+};
+
+export const emotionList = [
+  {
+    id: 1,
+    name: "(❁´◡`❁)",
+    img: getEmotionImgById(1),
+  },
+  {
+    id: 2,
+    name: "(●'◡'●)",
+    img: getEmotionImgById(2),
+  },
+  {
+    id: 3,
+    name: "(•_•)",
+    img: getEmotionImgById(3),
+  },
+  {
+    id: 4,
+    name: "•﹏•",
+    img: getEmotionImgById(4),
+  },
+  {
+    id: 5,
+    name: "X﹏X",
+    img: getEmotionImgById(5),
+  },
+];
