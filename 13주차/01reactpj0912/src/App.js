@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import New from "./pages/New";
 import Diary from "./pages/Diary";
 import Edit from "./pages/Edit";
-import { type } from "@testing-library/user-event/dist/type";
 
 const Wrapper = styled.div`
   padding: 20px;
@@ -36,29 +35,26 @@ const reducer = (state, action) => {
 const mockData = [
   {
     id: "mock1",
-    date: new Date().getTime(),
+    date: new Date().getTime() - 1,
     content: "mock1",
     emotionId: 1,
   },
   {
     id: "mock2",
-    date: new Date().getTime(),
+    date: new Date().getTime() - 2,
     content: "mock2",
     emotionId: 2,
   },
   {
     id: "mock3",
-    date: new Date().getTime(),
+    date: new Date().getTime() - 3,
     content: "mock3",
     emotionId: 3,
   },
 ];
 
-export const DiaryStateContext = React.createContext;
-
+export const DiaryStateContext = React.createContext();
 export const DiaryDispatchContext = React.createContext();
-
-console.log(DiaryStateContext);
 
 const App = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
@@ -85,17 +81,18 @@ const App = () => {
     idRef.current += 1;
   };
 
-  const onUpdate = (targetId, date, content, emtionId) => {
+  const onUpdate = (targetId, date, content, emotionId) => {
     dispatch({
       type: "UPDATE",
       data: {
         id: targetId,
         date: new Date(date).getTime(),
         content,
-        emtionId,
+        emotionId,
       },
     });
   };
+
   const onDelete = (targetId) => {
     dispatch({
       type: "DELETE",
@@ -104,7 +101,7 @@ const App = () => {
   };
 
   if (!isDataLoaded) {
-    return <div>데이터를 불러오는 중입니다.</div>;
+    return <div>데이터를 불러오는 중입니다!</div>;
   } else {
     return (
       <DiaryStateContext.Provider value={data}>
@@ -114,7 +111,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/new" element={<New />} />
               <Route path="/diary/:id" element={<Diary />} />
-              <Route path="/edit" element={<Edit />} />
+              <Route path="/edit/:id" element={<Edit />} />
             </Routes>
           </Wrapper>
         </DiaryDispatchContext.Provider>
