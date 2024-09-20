@@ -9,10 +9,10 @@ const Section = styled.div`
   width: 100%;
   margin-bottom: 100px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align = center
+  text-align: center;
 `;
 
 const Title = styled.h4`
@@ -55,20 +55,18 @@ const Description = styled.div`
 
 const ContentBg = styled.div`
   width: 100%;
-  height: 150px
+  height: 150px;
   background: #ececec;
-  border-radius:5px;
-  word-break:keep-all;
-  overflow-wrap:break-word;
-
-  
+  border-radius: 5px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 `;
 
 const Content = styled.p`
   padding: 20px;
   font-size: 20px;
-  font-wight: 400;
-  line-hught: 3rk;
+  font-weight: 400;
+  line-height: 3;
 `;
 
 const Viewer = ({ content, emotionId }) => {
