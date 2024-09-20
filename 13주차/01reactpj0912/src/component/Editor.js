@@ -1,10 +1,39 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import Header from "./Header";
 import Button from "./Button";
-import { getFormattedDate } from "../utill";
 import EmotionItem from "./EmotionItem";
-import { emotionList } from "../utill";
+import { getFormattedDate, emotionList } from "../utill";
+
+const EditorSection = styled.div`
+  margin-bottom: 40px;
+  & h4 {
+    font-size: 22px;
+  }
+`;
+
+const Textarea = styled.textarea`
+  border: none;
+  border-radius: 5px;
+  background: #ececec;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Nanum Pen Script", cursive;
+  width: 100%;
+  min-height: 200px;
+  resize: none;
+`;
+
+const Input = styled.input`
+  border: none;
+  border-radius: 5px;
+  background: #ececec;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Nanum Pen Script", cursive;
+  cursor: pointer;
+`;
 
 const Buttongroup = styled.div`
   display: flex;
@@ -16,35 +45,6 @@ const Emotiongroup = styled.div`
   display: flex;
   justify-content: space-around;
   gap: 2%;
-`;
-
-const EditorSection = styled.div`
-  margin-bottom: 40px;
-  & h4 {
-    font-size: 22px;
-  }
-`;
-
-const Textarea = styled.textarea`
-  border: none;
-  background: #ececec;
-  border-redius: 5px;
-  padding: 20px;
-  font-size: 20px;
-  font-family: "Nanum Pen Script", cursive;
-  width: 100%;
-  min-height: 200px;
-  resize: none;
-`;
-
-const Input = styled.input`
-  border: none;
-  background: #ececec;
-  border-redius: 5px;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: "Nanum Pen Script", cursive;
-  cursor: pointer;
 `;
 
 const Editor = ({ initData, onSubmit }) => {
@@ -63,7 +63,7 @@ const Editor = ({ initData, onSubmit }) => {
     }
   }, [initData]);
 
-  const hadleChangeDate = (e) => {
+  const handleChangeDate = (e) => {
     setState({
       ...state,
       date: e.target.value,
@@ -97,7 +97,7 @@ const Editor = ({ initData, onSubmit }) => {
       <EditorSection>
         <h4>오늘의 날짜</h4>
         <div>
-          <Input type="date" value={state.date} onChange={hadleChangeDate} />
+          <Input type="date" value={state.date} onChange={handleChangeDate} />
         </div>
       </EditorSection>
       <EditorSection>

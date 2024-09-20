@@ -8,16 +8,16 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   padding: 15px 0;
   border-bottom: 1px solid #e2e2e2;
-  gap: 20px;
 `;
 
 const DiaryContent = styled.div``;
 
 const InfoSection = styled.div`
   flex: 1;
-  cusor: pointer;
+  cursor: pointer;
 `;
 
 const ButtonSection = styled.div`
@@ -36,7 +36,8 @@ const ContentItem = styled.div`
 
 const ImgBg = styled.div`
   width: 120px;
-  hight: 80px;
+  height: 80px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +69,7 @@ const DiaryItem = ({ id, date, content, emotionId }) => {
     navigate(`/diary/${id}`);
   };
   const goEdit = () => {
-    navigate(`edit/${id}`);
+    navigate(`/edit/${id}`);
   };
   return (
     <Wrapper>
@@ -79,7 +80,7 @@ const DiaryItem = ({ id, date, content, emotionId }) => {
       </DiaryContent>
       <InfoSection>
         <DateItem>{new Date(parseInt(date)).toLocaleDateString()}</DateItem>
-        <ContentItem>{content.slice(0, 25)}</ContentItem>
+        <ContentItem>{content}</ContentItem>
       </InfoSection>
       <ButtonSection>
         <Button text={"수정하기"} onClick={goEdit} />

@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
-import { DiaryDispatchContext } from "../App";
+import { DiaryStateContext } from "../App";
 import Header from "../component/Header";
 import Button from "../component/Button";
 import DiaryList from "../component/DiaryList";
 import { getMonthRangeByDate } from "../utill";
 
 const Home = () => {
-  const data = useContext(DiaryDispatchContext);
+  const data = useContext(DiaryStateContext);
   const [pivotDate, setPivotDate] = useState(new Date());
   const [filteredData, setFilteredData] = useState([]);
 

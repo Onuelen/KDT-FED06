@@ -32,10 +32,13 @@ const Select = styled.select`
   height: 100%;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 18px;
+  padding: 10px 30px;
+  font-size: 28px;
   font-family: "Nanum Pen Script", cursive;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
 `;
 
 const sortOptionList = [
@@ -78,11 +81,7 @@ const DiaryList = ({ data }) => {
           </Select>
         </LeftContent>
         <RightContent>
-          <Button
-            type={"positive"}
-            text={"새 일기 작성"}
-            onClick={onClickNew}
-          />
+          <Button type={"positive"} text={"새 일기쓰기"} onClick={onClickNew} />
         </RightContent>
       </DiaryContents>
       <ListContents>

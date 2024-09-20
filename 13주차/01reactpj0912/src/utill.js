@@ -1,4 +1,3 @@
-import { getElementError } from "@testing-library/react";
 import emotion1 from "./emotion/emotion1.png";
 import emotion2 from "./emotion/emotion2.png";
 import emotion3 from "./emotion/emotion3.png";
