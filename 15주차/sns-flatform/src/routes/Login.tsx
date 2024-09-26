@@ -69,8 +69,10 @@ const Login = () => {
         <Input type="submit" value={isLoading ? "Loading..." : "🔑"} />
       </Form>
       {error !== "" ? <Error>{error}</Error> : null}
-      <Switcher>Don't you have an account?</Switcher>
-      <Link to="create-account">Create one &r arr&</Link>
+      <Switcher>
+        Don't you have an account?
+        <Link to="create-account">Create one &rarr;</Link>
+      </Switcher>
       <GithubBtn />
     </Wrapper>
   );
