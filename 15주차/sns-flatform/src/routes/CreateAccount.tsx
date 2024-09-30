@@ -9,7 +9,7 @@ import {
   Title,
   Wrapper,
   Error,
-} from "../components/auth-component";
+} from "../components/auth-components";
 
 const CreateAccount = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -25,9 +25,13 @@ const CreateAccount = () => {
       target: { name, value },
     } = e;
 
-    if (name === "name") setName(value);
-    else if (name === "email") setEmail(value);
-    else if (name === "password") setPassword(value);
+    if (name === "name") {
+      setName(value);
+    } else if (name === "email") {
+      setEmail(value);
+    } else if (name === "password") {
+      setPassword(value);
+    }
   };
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -55,7 +59,7 @@ const CreateAccount = () => {
 
   return (
     <Wrapper>
-      <Title>Log into 🎉</Title>
+      <Title>Log into 🎃</Title>
       <Form onSubmit={onSubmit}>
         <Input
           onChange={onChange}

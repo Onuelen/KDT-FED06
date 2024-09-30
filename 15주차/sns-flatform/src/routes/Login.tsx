@@ -10,7 +10,7 @@ import {
   Title,
   Wrapper,
   Error,
-} from "../components/auth-component";
+} from "../components/auth-components";
 import GithubBtn from "../components/GithubBtn";
 
 const Login = () => {
@@ -26,8 +26,11 @@ const Login = () => {
       target: { name, value },
     } = e;
 
-    if (name === "email") setEmail(value);
-    else if (name === "password") setPassword(value);
+    if (name === "email") {
+      setEmail(value);
+    } else if (name === "password") {
+      setPassword(value);
+    }
   };
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -48,7 +51,7 @@ const Login = () => {
 
   return (
     <Wrapper>
-      <Title>Login 🔒</Title>
+      <Title>Login 🎪</Title>
       <Form onSubmit={onSubmit}>
         <Input
           onChange={onChange}
@@ -66,12 +69,12 @@ const Login = () => {
           placeholder="Password"
           required
         />
-        <Input type="submit" value={isLoading ? "Loading..." : "🔑"} />
+        <Input type="submit" value={isLoading ? "Loading..." : "Log in"} />
       </Form>
       {error !== "" ? <Error>{error}</Error> : null}
       <Switcher>
         Don't you have an account?
-        <Link to="create-account">Create one &rarr;</Link>
+        <Link to="/create-account">Create One &rarr;</Link>
       </Switcher>
       <GithubBtn />
     </Wrapper>

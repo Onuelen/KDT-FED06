@@ -1,8 +1,8 @@
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, updateDoc } from "firebase/firestore";
 import React, { useState } from "react";
 import styled from "styled-components";
-import { auth, db } from "../firebase";
-import { Await } from "react-router-dom";
+import { auth, db, storage } from "../firebase";
+import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 
 const Form = styled.form`
   display: flex;
@@ -38,23 +38,20 @@ const TextArea = styled.textarea`
 `;
 
 const AttachFileButton = styled.label`
-  display: flex;
-  justify-content: center;
   width: 100%;
   color: #1d9bf9;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   border: 1px solid #1d9bf9;
   border-radius: 20px;
+  text-align: center;
   padding: 10px 0;
-  opacity: 1;
   transition: all 0.3s;
   cursor: pointer;
   &:hover {
-    border: 1px solid #1d9bf9;
-    color: #fff;
+    border: 1px solid transparent;
     background: #1d9bf9;
-    opacity: 0.8;
+    color: #fff;
   }
 `;
 
@@ -63,18 +60,17 @@ const AttachFileInput = styled.input`
 `;
 
 const SubmitBtn = styled.input`
-  color: #1d9bf9;
   background: #fff;
+  color: #1d9bf9;
   border: none;
   border-radius: 20px;
   padding: 10px 0;
   font-size: 16px;
   font-weight: 600;
-  transition: all 0.3s;
   cursor: pointer;
+  transition: opacity 0.3s;
   &:hover,
   &:active {
-    background: #ccc;
     opacity: 0.9;
   }
 `;
@@ -84,13 +80,21 @@ const PostForm = () => {
   const [post, setPost] = useState("");
   const [file, setFile] = useState<File | null>(null);
 
-  const onChange = async (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const maxFileSize = 5 * 1024 * 1024;
+
+  const onChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setPost(e.target.value);
   };
 
-  const onFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  const onFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { files } = e.target;
-    if (files && files.length === 1) setFile(files[0]);
+    if (files && files.length === 1) {
+      if (files[0].size > maxFileSize) {
+        alert("The Maximum Capacity that can be uploaded is 5MB!");
+        return;
+      }
+      setFile(files[0]);
+    }
   };
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -99,19 +103,38 @@ const PostForm = () => {
     if (!user || isLoading || post === "" || post.length > 180) return;
     try {
       setIsLoading(true);
-      await addDoc(collection(db, "contents"), {
+      const doc = await addDoc(collection(db, "contents"), {
         post,
         createdAt: Date.now(),
-        username: user?.displayName || "AnonyMous",
+        username: user?.displayName || "Anonymous",
         userId: user.uid,
       });
-    } catch (er) {
-      console.error(er);
+      if (file) {
+        const locationRef = ref(storage, `contents/${user.uid}/${doc.id}`);
+        const result = await uploadBytes(locationRef, file);
+        const url = await getDownloadURL(result.ref);
+        const fileType = file.type;
+
+        if (fileType.startsWith("image/")) {
+          await updateDoc(doc, {
+            photo: url,
+          });
+        }
+
+        if (fileType.startsWith("video/")) {
+          await updateDoc(doc, {
+            video: url,
+          });
+        }
+      }
+      setPost("");
+      setFile(null);
+    } catch (e) {
+      console.error(e);
     } finally {
       setIsLoading(false);
     }
   };
-
   return (
     <Form onSubmit={onSubmit}>
       <TextArea
@@ -119,16 +142,17 @@ const PostForm = () => {
         value={post}
         name="contents"
         id="contents"
-        placeholder="What's Happening?"
+        placeholder="What is Happening?"
+        required
       ></TextArea>
       <AttachFileButton htmlFor="file">
-        {file ? "Contents Added💫" : "Add 💨"}
+        {file ? "Contents Added ✅" : "Add 💨"}
       </AttachFileButton>
       <AttachFileInput
         onChange={onFileChange}
         type="file"
         id="file"
-        accept="video/*,image/*"
+        accept="video/*, image/*"
       />
       <SubmitBtn type="submit" value={isLoading ? "Posting..." : "Post"} />
     </Form>
