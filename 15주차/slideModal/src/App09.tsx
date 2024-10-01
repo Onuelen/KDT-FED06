@@ -9,29 +9,30 @@ import {
 } from "framer-motion";
 import { createGlobalStyle, styled } from "styled-components";
 import reset from "styled-reset";
-import { style } from "framer-motion/client";
 
 const GlobalStyles = createGlobalStyle`
-  ${reset} /* 크로스 브라우징 대처 */
+  ${reset};
+
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
   * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
   }
 
   body {
-font-family:"Source Sans 3", sans-serif;
-background:linear-gradient(135deg, #a2ffb1, #3d35a7)
+    font-family: "Source Sans 3", sans-serif;
+    background: linear-gradient(135deg, #e09, #d0e);
   }
 
-  ul,li {
-    list-style:none;
+  ul, li {
+    list-style: none;
   }
 
   a {
-    text-decoration:none;
-    color:inherit;
+    text-decoration: none;
+    color: inherit;
   }
 `;
 

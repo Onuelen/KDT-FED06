@@ -1,13 +1,12 @@
 import {
   collection,
-  getDocs,
   limit,
   onSnapshot,
   orderBy,
   query,
   Unsubscribe,
 } from "firebase/firestore";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { db } from "../firebase";
 import Post from "./Post";
@@ -41,7 +40,7 @@ const TimeLine = () => {
         orderBy("createdAt", "desc"),
         limit(25)
       );
-      unsubscribe = await onSnapshot(postsQuery, (snapshot) => {
+      unsubscribe = onSnapshot(postsQuery, (snapshot) => {
         const posts = snapshot.docs.map((doc) => {
           const { createdAt, photo, video, post, userId, username } =
             doc.data();
@@ -63,6 +62,7 @@ const TimeLine = () => {
       unsubscribe && unsubscribe();
     };
   }, []);
+  console.log(posts);
   return (
     <Wrapper>
       {posts.map((post) => (
