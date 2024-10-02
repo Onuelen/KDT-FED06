@@ -62,7 +62,6 @@ const TimeLine = () => {
       unsubscribe && unsubscribe();
     };
   }, []);
-  console.log(posts);
   return (
     <Wrapper>
       {posts.map((post) => (

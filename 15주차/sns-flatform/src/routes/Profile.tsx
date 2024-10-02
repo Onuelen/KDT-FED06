@@ -11,7 +11,6 @@ import {
   query,
   where,
 } from "firebase/firestore";
-
 import { IPost } from "../components/TimeLine";
 import Post from "../components/Post";
 
@@ -38,7 +37,7 @@ const AvatarUpload = styled.label`
 `;
 
 const AvatarImg = styled.img`
-  width: 100%;
+  width: 140px;
 `;
 
 const AvatarInput = styled.input`
@@ -83,6 +82,7 @@ const Profile = () => {
   const [posts, setPosts] = useState<IPost[]>([]);
   const [name, setName] = useState(user?.displayName ?? "Anonymous");
   const [editMode, setEditMode] = useState(false);
+
   const onAvatarChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const { files } = e.target;
     if (!user) return;
@@ -139,7 +139,6 @@ const Profile = () => {
     });
     setPosts(posts);
   };
-
   useEffect(() => {
     fetchPosts();
   }, []);
