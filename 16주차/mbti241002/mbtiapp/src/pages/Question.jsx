@@ -22,6 +22,16 @@ const Title = styled.div`
   padding: 16px 20px;
   background: crimson;
   border-radius: 8px;
+  @media screen and (max-width: 780px) {
+    width: 300px;
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+  @media screen and (max-width: 360px) {
+    width: 200px;
+    font-size: 18px;
+    padding: 4px 8px;
+  }
 `;
 
 const ButtonGroup = styled.div`
@@ -33,6 +43,22 @@ const ButtonGroup = styled.div`
     width: 400px;
     height: 200px;
     font-size: 18px;
+  }
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    & > button {
+      width: 300px;
+      height: 150px;
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    flex-direction: column;
+    & > button {
+      width: 100px;
+      height: 100px;
+      font-size: 18px;
+    }
   }
 `;
 
