@@ -1,32 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ProductCard from "../components/ProductCard";
 import { Col, Container, Row } from "react-bootstrap";
+import ProductCard from "../components/ProductCard";
+import { productAction } from "../redux/actions/productAction";
+import { useDispatch } from "react-redux";
 
 const ProductAll = () => {
-  const [productList, setProductList] = useState([]);
   const [query, setQuery] = useSearchParams();
+  const dispatch = useDispatch();
   const getProducts = async () => {
     const searchQuery = query.get("q") || "";
-    const url = `https://my-json-server.typicode.com/Onuelen/musinsa/products?q=${searchQuery}`;
-    const response = await fetch(url);
-    const data = await response.json();
-    setProductList(data);
-    console.log(productList);
+    dispatch(productAction.getProduct(searchQuery));
   };
-
   useEffect(() => {
     getProducts();
-  }, []);
+  }, [query]);
+
   return (
     <Container>
       <Row>
-        {productList.map((menu, index) => (
+        {/* {productList.map((menu, index) => (
           <Col key={menu.id} lg={3}>
             <ProductCard key={menu.id} item={menu} />
           </Col>
-        ))}
+        ))} */}
       </Row>
     </Container>
   );
