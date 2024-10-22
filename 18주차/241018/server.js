@@ -1,5 +1,4 @@
 import { ApolloServer, gql } from "apollo-server";
-import { log } from "console";
 
 let tweets = [
   {
@@ -9,7 +8,7 @@ let tweets = [
   },
   {
     id: "2",
-    text: "Second Two!",
+    text: "Second One!",
     userId: "1",
   },
 ];
@@ -27,19 +26,11 @@ let users = [
   },
 ];
 
-let movies = () => {};
-
 const typeDefs = gql`
-  """
-  User Desc
-  """
   type User {
-    """
-    this is ID
-    """
     id: ID!
     """
-    Is the Sum of firstName + lastName as a String
+    Is the sum of firstName + lastName as a String
     """
     userName: String!
     firstName: String!
@@ -57,14 +48,13 @@ const typeDefs = gql`
     allTweets: [Tweet!]!
     allUsers: [User!]!
     allMovies: [Movie!]!
-    tweet(id: ID): Tweet
+    tweet(id: ID!): Tweet
     movie(id: String!): Movie
   }
   type Mutation {
     postTweet(text: String, userId: ID): Tweet!
-
     """
-    Delete a Tweet if found, else return false
+    Delete a Tweet if found, else returns false
     """
     deleteTweet(id: ID): Boolean!
   }
@@ -99,7 +89,6 @@ const resolvers = {
       return tweets;
     },
     allUsers() {
-      console.log("userName called");
       return users;
     },
     tweet(root, { id }) {
@@ -147,7 +136,7 @@ const resolvers = {
     author({ userId }) {
       const result = users.find((user) => user.id === userId);
       if (!result) {
-        console.log("해당 자료가 없습니다.");
+        console.log("해당 자료가 없습니다!");
         return null;
       }
       return result;
@@ -155,8 +144,8 @@ const resolvers = {
   },
 };
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const sever = new ApolloServer({ typeDefs, resolvers });
 
-server.listen().then(({ url }) => {
+sever.listen().then(({ url }) => {
   console.log(`Running on ${url}`);
 });
