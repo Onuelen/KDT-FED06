@@ -135,6 +135,7 @@
 // } as Dog;      //타입 단언
 
 // 타입 단언은 any 다음으로 치트키.
+
 let num1 = 10 as never;
 let num2 = 10;
 let num3 = 10 as unknown as string;
