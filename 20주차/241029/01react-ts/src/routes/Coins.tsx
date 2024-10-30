@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import { fetchCoins } from "../api";
 
 const Container = styled.main`
   width: 100%;
@@ -60,7 +62,7 @@ const Img = styled.img`
   margin: 0 10px;
 `;
 
-interface CoinInterface {
+export interface CoinInterface {
   id: string;
   name: string;
   symbol: string;
@@ -71,30 +73,36 @@ interface CoinInterface {
 }
 
 const Coins = () => {
-  const [coins, setCoins] = useState<CoinInterface[]>([]);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    (async () => {
-      const response = await fetch(
-        "https://raw.githubusercontent.com/Divjason/coindata/refs/heads/main/coins.json"
-      );
-      const json = await response.json();
-      console.log(json);
+  // const [coins, setCoins] = useState<CoinInterface[]>([]);
+  // const [loading, setLoading] = useState(true);
+  // useEffect(() => {
+  //   (async () => {
+  //     const response = await fetch(
+  //       "https://raw.githubusercontent.com/Divjason/coindata/refs/heads/main/coins.json"
+  //     );
+  //     const json = await response.json();
 
-      setCoins(json.slice(0, 101));
-      setLoading(false);
-    })();
-  }, []);
+  //     setCoins(json.slice(0, 101));
+  //     setLoading(false);
+  //   })();
+  // }, []);
+
+  const { isLoading, data } = useQuery<CoinInterface[]>({
+    queryKey: ["allCoins"],
+    queryFn: fetchCoins,
+  });
+  console.log(isLoading, data);
+
   return (
     <Container>
       <Header>
         <Title>Coin List</Title>
       </Header>
-      {loading ? (
+      {isLoading ? (
         <Loader>"Loading..."</Loader>
       ) : (
         <CoinList>
-          {coins.map((coin) => (
+          {data?.slice(0, 30).map((coin) => (
             <Coin key={coin.id}>
               <Link to={`/${coin.id}`} state={`${coin.name}`}>
                 💰Now Rank: {coin.rank}
