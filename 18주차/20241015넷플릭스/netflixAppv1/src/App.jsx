@@ -6,6 +6,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Movie from "./pages/Movie";
 import MovieDetail from "./pages/MovieDetail";
+import MovieCard from "./components/MovieCard";
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
@@ -41,8 +42,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "movie",
-        element: <Movie />,
+        path: "#MovieCard",
+        element: <MovieCard />,
       },
       {
         path: "movie/:id",

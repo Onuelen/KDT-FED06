@@ -6,6 +6,7 @@ import { Navbar, Container, Button, Nav, Form } from "react-bootstrap";
 
 const Wrapper = styled.div`
   /* padding: 0 0px; */
+  border:1px solid #0099ff;
   .inner-item{
     padding:0 24px;
   }

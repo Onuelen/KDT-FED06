@@ -46,7 +46,7 @@ const Banner = ({ movie }) => {
   return (
     <BgImg>
       <Img
-        src={`https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces${movie.backdrop_path}`}
+      // src={`https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces${movie.backdrop_path}`}
       />
       <BannerInfo>
         <MovieTitle>{movie.title}</MovieTitle>
