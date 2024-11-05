@@ -1,30 +1,28 @@
-import { atom, selector } from "recoil";
-// import React from "react";
+import React from "react";
 // import { createGlobalStyle } from "styled-components";
-// // import { useRecoilValue, useRecoilState } from "recoil";
-// // import { hourSelector, minutesState } from "./atoms";
+// import { useRecoilValue, useRecoilState } from "recoil";
+// import { minuteState, hourSelector } from "./atoms";
 
-// const GlobalStyled = createGlobalStyle`
+// const GlobalStyle = createGlobalStyle`
 //   * {
 //     margin:0;
-//   padding:0;
-//   box-sizing:border-box;
-//   font-family: "Source Sans 3", serif;
+//     padding: 0;
+//     box-sizing: border-box;
 //   }
 
-//   ul,li {
-//     list-style:none;
+//   ul, li {
+//     list-style: none;
 //   }
 
-//   a{
-//     text-decoration:none;
-//     color:inherit;
+//   a {
+//     text-decoration: none;
+//     color: inherit;
 //   }
 // `;
 
 // const App = () => {
 //   const [hours, setHours] = useRecoilState(hourSelector);
-//   const [minutes, setMinutes] = useRecoilState(minutesState);
+//   const [minutes, setMinutes] = useRecoilState(minuteState);
 //   const onMinutesChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 //     setMinutes(+event.currentTarget.value);
 //   };
@@ -33,7 +31,7 @@ import { atom, selector } from "recoil";
 //   };
 //   return (
 //     <>
-//       <GlobalStyled />
+//       <GlobalStyle />
 //       <div>
 //         <input
 //           value={minutes}

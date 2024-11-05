@@ -1,17 +1,23 @@
 import { atom } from "recoil";
 
-// const x = ["a", "b", "c", "d", "e"];
+// const x = ["b", "c", "d", "e"];
 
 // x.splice(0, 1);
 // // a
 
 // x.splice(2, 0, "a");
-// // ["b","c","a","d","e"]
+// // ["b", "c", "a", "d", "e"]
 
+const toDos = {
+  x: ["a", "b"],
+  y: ["c", "d"],
+};
 
-// //splice - 원본데이터 변형됨.
+Object.keys(toDos);
+// > ["x", "y"]
 
-// object.values.
+Object.values(toDos);
+// > [[x의 배열], [y의 배열]]
 
-toDos[0]=> ["a", "b"]
-toDos[1]=> ["c", "d"]
+// toDos["x"] => ["a", "b"]
+// toDos["y"] => ["c", "d"]
