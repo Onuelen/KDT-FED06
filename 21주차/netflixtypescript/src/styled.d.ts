@@ -4,7 +4,7 @@ declare module "styled-components" {
   interface DefaultTheme {
     red: string;
     black: {
-      vaeryDark: string;
+      veryDark: string;
       darker: string;
       lighter: string;
     };
