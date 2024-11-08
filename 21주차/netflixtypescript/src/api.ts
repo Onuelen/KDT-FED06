@@ -27,6 +27,18 @@ export interface GetMoviesResult {
 
 export const getMovies = () => {
   return fetch(
-    `${BASE_PATH}/movie/now_playing?api_key=${API_KEY}&language=en-us`
+    `${BASE_PATH}/movie/now_playing?api_key=${API_KEY}&language=ko-kr`
+  ).then((response) => response.json());
+};
+
+export const searchContents = (keyword: string | null) => {
+  return fetch(
+    `${BASE_PATH}/search/multi?api_key=${API_KEY}&query=${keyword}&language=ko-kr`
+  ).then((response) => response.json());
+};
+
+export const searchGeneres = () => {
+  return fetch(
+    `${BASE_PATH}/genre/movie/list/api_key=${API_KEY}&language=ko-kr`
   ).then((response) => response.json());
 };

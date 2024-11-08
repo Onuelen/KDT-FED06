@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: "Source Sans 3", serif;
+    font-family: "Noto Sans KR", serif;
   }
 `;
 
