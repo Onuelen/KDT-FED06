@@ -8,7 +8,7 @@ import { makeImagePath } from "../utills";
 
 const Container = styled.div`
   width: 100%;
-  height: 2000px;
+  height: 105vh;
   margin-top: 60px;
   /* background: ${(props) => props.theme.black.lighter}; */
   display: flex;
