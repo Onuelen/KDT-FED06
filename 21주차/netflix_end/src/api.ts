@@ -1,4 +1,4 @@
-const API_KEY = "2949cab45c53d12e8c835b7c8625582f";
+const API_KEY = "0bc8bd2db453d7413d1c2844ec617b61";
 const BASE_PATH = "https://api.themoviedb.org/3";
 
 export interface Movie {
@@ -18,7 +18,7 @@ export interface Movie {
 export interface GetMoviesResult {
   dates: {
     maximum: string;
-    minimum: string;
+    minimun: string;
   };
   page: number;
   results: Movie[];
@@ -27,7 +27,7 @@ export interface GetMoviesResult {
 }
 
 export const getMovies = () => {
-  return fetch(`${BASE_PATH}/movie/now_playing?api_key=${API_KEY}r`).then(
+  return fetch(`${BASE_PATH}/movie/now_playing?api_key=${API_KEY}`).then(
     (response) => response.json()
   );
 };
@@ -39,7 +39,7 @@ export const searchContents = (keyword: string | null) => {
 };
 
 export const searchGeneres = () => {
-  return fetch(`${BASE_PATH}/genre/movie/list/api_key=${API_KEY}`).then(
+  return fetch(`${BASE_PATH}/genre/movie/list?api_key=${API_KEY}`).then(
     (response) => response.json()
   );
 };
