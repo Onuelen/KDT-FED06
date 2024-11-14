@@ -45,4 +45,4 @@ deque.removeLast();
 deque.printAll();
 deque.removeLast();
 deque.printAll();
-console.log(`is Empty : ${deque.isEmpty()}`);
+console.log(`isEmpty: ${deque.isEmpty()}`);

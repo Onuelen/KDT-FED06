@@ -15,4 +15,4 @@ console.log(queue.dequeue());
 console.log(queue.dequeue());
 console.log(queue.dequeue());
 
-console.log(`isEmpty: ${queue.isEmpty}`);
+console.log(`isEmpty: ${queue.isEmpty()}`);

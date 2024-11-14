@@ -25,4 +25,5 @@ class Queue {
     return this.list.count === 0;
   }
 }
+
 export { Queue };

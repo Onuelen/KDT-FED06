@@ -2,14 +2,15 @@ class Node {
   constructor(data, next = null, prev = null) {
     this.data = data;
     this.next = next;
+    this.prev = prev;
   }
 }
 
 class DoublyLinkedList {
   constructor() {
     this.head = null;
+    this.tail = null;
     this.count = 0;
-    this.prev = null;
   }
 
   printAll() {
@@ -19,6 +20,7 @@ class DoublyLinkedList {
     while (currentNode !== null) {
       text += currentNode.data;
       currentNode = currentNode.next;
+
       if (currentNode !== null) {
         text += ", ";
       }
@@ -52,9 +54,11 @@ class DoublyLinkedList {
       this.tail.next = newNode;
     } else {
       let currentNode = this.head;
+
       for (let i = 0; i < index - 1; i++) {
         currentNode = currentNode.next;
       }
+
       newNode.next = currentNode.next;
       newNode.prev = currentNode;
       currentNode.next = newNode;
@@ -100,7 +104,6 @@ class DoublyLinkedList {
         currentNode = currentNode.next;
       }
       let deletedNode = currentNode.next;
-      currentNode.next = currentNode.next;
       currentNode.next = currentNode.next.next;
       currentNode.next.prev = currentNode;
       this.count--;
