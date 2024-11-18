@@ -1,11 +1,9 @@
-// Rreact에서 Data-Fetching 과정!!
-
 import { useState, useEffect } from "react";
 
 const Page = () => {
   const [state, setState] = useState("");
   const fetchData = async () => {
-    const response = fetch("...");
+    const response = await fetch("...");
     const data = await response.json();
 
     setState(data);
