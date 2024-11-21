@@ -8,17 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Divjason/node-reloaded.git"
+    "url": "git+https://github.com/Onuelen/reloaded.git"
   },
   "author": "David",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Divjason/node-reloaded/issues"
+    "url": "https://github.com/Onuelen/reloaded/issues"
   },
-  "homepage": "https://github.com/Divjason/node-reloaded#readme",
+  "homepage": "https://github.com/Onuelen/reloaded#readme",
   "dependencies": {
     "express": "^4.21.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "pug": "^3.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.25.9",
