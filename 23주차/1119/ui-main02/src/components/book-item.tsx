@@ -12,11 +12,11 @@ const BookItem = ({
   coverImgUrl,
 }: BookData) => {
   return (
-    <Link href={`/book/${id}`} className="style.container">
-      <img src={coverImgUrl} alt="title" />
+    <Link href={`/book/${id}`} className={style.container}>
+      <img src={coverImgUrl} alt={title} />
       <div>
         <div className={style.title}>{title}</div>
-        <div className={style.subTitle}>{subTitle}</div>
+        <div className={style.subtitle}>{subTitle}</div>
         <br />
         <div className={style.author}>
           {author} | {publisher}

@@ -4,20 +4,21 @@
   "description": "watch videos.",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/server.js"
+    "dev": "nodemon --exec babel-node src/init.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Onuelen/reloaded.git"
+    "url": "git+https://github.com/Divjason/node-reloaded.git"
   },
   "author": "David",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Onuelen/reloaded/issues"
+    "url": "https://github.com/Divjason/node-reloaded/issues"
   },
-  "homepage": "https://github.com/Onuelen/reloaded#readme",
+  "homepage": "https://github.com/Divjason/node-reloaded#readme",
   "dependencies": {
     "express": "^4.21.1",
+    "mongoose": "^8.8.2",
     "morgan": "^1.10.0",
     "pug": "^3.0.3"
   },

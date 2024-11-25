@@ -1,12 +1,18 @@
 import styles from "./page.module.css";
 import BookItem from "@/components/book-item";
-import books from "@/mock/books.json";
 import { BookData } from "@/types";
 
 const RecoBooks = async () => {
-  const response = await fetch("http://localhost:12345/book/random");
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book/random`,
+    {
+      next: {
+        revalidate: 3,
+      },
+    }
+  );
   if (!response.ok) {
-    return <div>오류가 발생했습니다.</div>;
+    return <div>오류가 발생했습니다...</div>;
   }
   const recoBooks: BookData[] = await response.json();
   return (
@@ -19,9 +25,12 @@ const RecoBooks = async () => {
 };
 
 const AllBooks = async () => {
-  const response = await fetch("http://localhost:12345/book");
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book`,
+    { cache: "no-store" }
+  );
   if (!response.ok) {
-    return <div>오류가 발생했습니다.</div>;
+    return <div>오류가 발생했습니다...</div>;
   }
   const allBooks: BookData[] = await response.json();
   return (
@@ -35,7 +44,7 @@ const AllBooks = async () => {
 
 const Home = async () => {
   return (
-    <div className={styles.page}>
+    <div className={styles.container}>
       <section>
         <h3>지금 추천하는 도서</h3>
         <RecoBooks />

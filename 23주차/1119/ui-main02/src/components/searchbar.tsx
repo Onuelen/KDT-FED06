@@ -15,18 +15,17 @@ const Searchbar = () => {
   }, [q]);
 
   const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
-    if (!search || q === search) return;
-    router.push(`/setSeach?1=${search}`);
+    setSeach(e.target.value);
   };
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!search || q === search) return;
     router.push(`/search?q=${search}`);
   };
   return (
     <div>
-      <form className={style.container} onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className={style.container}>
         <input value={search} type="text" onChange={onChangeSearch} />
         <input type="submit" value="검색" />
       </form>
