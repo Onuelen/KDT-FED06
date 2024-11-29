@@ -7,9 +7,7 @@ import { BookData } from "@/types";
 const Footer = async () => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book`,
-    {
-      cache: "force-cache",
-    }
+    { cache: "force-cache" }
   );
 
   if (!response.ok) {
