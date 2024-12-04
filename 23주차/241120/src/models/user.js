@@ -7,6 +7,9 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  githubId: {
+    type: Number,
+  },
   username: {
     type: String,
     required: true,
@@ -14,7 +17,6 @@ const userSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: true,
   },
   name: {
     type: String,
@@ -30,5 +32,4 @@ userSchema.pre("save", async function () {
 });
 
 const User = mongoose.model("User", userSchema);
-
 export default User;

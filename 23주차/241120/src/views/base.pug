@@ -9,17 +9,17 @@ html(lang="ko")
           gap: 4px;
         }
   body
-    header
-      h1 I Love #{nickname}
+    header 
+      h1 I Love #{nickname}!
       nav
         ul 
           li
             a(href="/") Home
-          if loggedIn 
+          if loggedIn
+            li 
+              a(href="/logout") Log Out 
             li
-              a(href="/logout") Log Out
-            li
-              a(href="/my-profile") #{loggedInUser.name}의 Profile 
+              a(href="/my-profile") #{loggedInUser.name}의 Profile
           else
             li
               a(href="/login") Login
