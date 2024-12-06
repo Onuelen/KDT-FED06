@@ -7,12 +7,14 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  githubId: {
-    type: Number,
+  avatarUrl: String,
+  socialOnly: {
+    type: Boolean,
+    default: false,
   },
   username: {
     type: String,
-    required: true,
+    // required: true,
     unique: true,
   },
   password: {

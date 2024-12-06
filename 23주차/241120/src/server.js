@@ -15,28 +15,21 @@ app.set("views", process.cwd() + "/src/views");
 app.use(logger);
 app.use(express.urlencoded({ extended: true }));
 
-// console.log(process.env.COOKIE_SECRET);
-
 app.use(
   session({
     secret: process.env.COOKIE_SECRET,
     resave: true,
     saveUninitialized: true,
-    cookie: {
-      maxAge: 20000,
-    },
     store: MongoStore.create({ mongoUrl: process.env.DB_URL }),
   })
 );
 
-// app.get("/add-one", (req, res, next) => {
-//   req.session.specialUser += 1;
-//   return res.send(`${req.session.id} ${req.session.specialUser}`);
-// });
-
 app.use(localMiddleware);
+app.use("/uploads", express.static(uploads));
 app.use("/", rootRouter);
 app.use("/users", userRouter);
 app.use("/videos", videoRouter);
+
+
 
 export default app;
