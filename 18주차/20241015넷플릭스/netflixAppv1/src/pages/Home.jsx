@@ -44,7 +44,7 @@ const Home = () => {
   } else {
     return (
       <div>
-        <Banner movie={popularMovie.results[0]} />
+        <Banner movie={popularMovie?.results?.[0]} />
         <Title>Popular Movie</Title>
         <MovieSlide movies={popularMovie} />
         <Title>TopRated Movie</Title>

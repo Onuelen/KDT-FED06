@@ -43,10 +43,13 @@ const MovieOverView = styled.p`
 `;
 
 const Banner = ({ movie }) => {
+  if (!movie) return null;
+
   return (
     <BgImg>
       <Img
-      // src={`https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces${movie.backdrop_path}`}
+        src={`https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces${movie.backdrop_path}`}
+        alt={movie.title}
       />
       <BannerInfo>
         <MovieTitle>{movie.title}</MovieTitle>

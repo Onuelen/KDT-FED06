@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `;
 
 const MovieSlide = ({ movies }) => {
-  console.log(movies);
+  // console.log(movies);
 
   const responsive = {
     superLargeDesktop: {
@@ -33,16 +33,13 @@ const MovieSlide = ({ movies }) => {
   };
   return (
     <Wrapper>
-      {
-        movies && (
-          <Carousel responsive={responsive}>
-            {movies.results.map((item, index) =>
-            (
-              <MovieCard key={index} item={item} />)
-            )}
-          </Carousel>
-        )
-      }
+      {movies?.results?.length > 0 && (
+        <Carousel responsive={responsive}>
+          {movies.results.map((item, index) => (
+            <MovieCard key={index} item={item} />
+          ))}
+        </Carousel>
+      )}
     </Wrapper>
   );
 };

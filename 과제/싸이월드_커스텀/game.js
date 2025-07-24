@@ -15,24 +15,46 @@
 // 4_1. 조건에 따라서 값을 어떻게 출력
 
 // Word Game
+const startWords = ["사과", "바나나", "토마토", "오렌지", "자몽"];
+
+const setRandomStartWord = () => {
+  const randomIndex = Math.floor(Math.random() * startWords.length);
+  document.querySelector("#word").textContent = startWords[randomIndex];
+};
+
 const gameStart = (e) => {
   e.preventDefault();
-  let word = document.querySelector("#word").innerText;
-  let myword = document.querySelector("#myword").value;
+
+  const wordElement = document.querySelector("#word");
+  const inputElement = document.querySelector("#myword");
+  const resultElement = document.querySelector("#result");
+
+  let word = wordElement.textContent;
+  let myword = inputElement.value.trim();
+
+  if (!myword) {
+    resultElement.textContent = "단어를 입력해주세요!";
+    return;
+  }
+
   let lastword = word[word.length - 1];
   let firstword = myword[0];
+
   if (lastword === firstword) {
-    document.querySelector("#result").innerText = "정답입니다!";
-    document.querySelector("#word").innerText = myword;
-    document.querySelector("#myword").value = "";
+    resultElement.textContent = "정답입니다!";
+    wordElement.textContent = myword;
   } else {
-    document.querySelector("#result").innerText = "틀렸습니다!";
-    document.querySelector("#myword").value = "";
+    resultElement.textContent = "오답입니다!";
   }
+
+  inputElement.value = "";
+  inputElement.focus();
 };
 
 const button = document.querySelector(".word_text form");
 button.addEventListener("submit", gameStart);
+
+window.addEventListener("DOMContentLoaded", setRandomStartWord);
 
 // Lotto Game
 
@@ -59,7 +81,7 @@ const result = document.querySelector(".game_lotto_number");
 
 const luckyNumber = {
   digitCount: 6,
-  maxNumber: 44,
+  maxNumber: 45,
 };
 
 const startLotto = () => {
@@ -67,15 +89,11 @@ const startLotto = () => {
 
   let myNumber = new Set();
 
-  for (let i = 0; i < digitCount; i++) {
+  while (myNumber.size < digitCount) {
     myNumber.add(Math.floor(Math.random() * maxNumber) + 1);
   }
 
-  if (myNumber.size === 6) {
-    result.innerText = `${[...myNumber]}`;
-  } else {
-    result.innerText = "재추첨 하겠습니다!";
-  }
+  result.innerText = [...myNumber].join(",");
 };
 
 lottoButton.addEventListener("click", startLotto);
